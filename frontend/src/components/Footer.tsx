@@ -3,6 +3,13 @@ import { Link } from 'react-router-dom'
 const BOOKING_URL = 'https://outlook.office.com/book/DHWWebsiteMeeting@digitalhealthworks.com/'
 
 export default function Footer() {
+  const scrollToSection = (id: string) => {
+    const el = document.getElementById(id)
+    if (el) {
+      el.scrollIntoView({ behavior: 'smooth' })
+    }
+  }
+
   return (
     <footer className="site-footer">
       <div className="site-footer__top">
@@ -22,24 +29,24 @@ export default function Footer() {
           <p className="site-footer__col-title">Company</p>
           <Link to="/about" className="site-footer__link">About</Link>
           <Link to="/team" className="site-footer__link">Team</Link>
-          <Link to="/#clients" className="site-footer__link">Clients</Link>
-          <Link to="/#case-study" className="site-footer__link">Case Study</Link>
+          <Link to="/" className="site-footer__link" onClick={() => setTimeout(() => scrollToSection('clients'), 100)}>Clients</Link>
+          <Link to="/" className="site-footer__link" onClick={() => setTimeout(() => scrollToSection('case-study'), 100)}>Case Study</Link>
         </div>
         <div>
           <p className="site-footer__col-title">Resources</p>
           <Link to="/insights" className="site-footer__link">Insights</Link>
           <Link to="/advisor" className="site-footer__link">Meet Helen</Link>
+          <a href="https://accessmri.io/" target="_blank" rel="noopener noreferrer" className="site-footer__link">AccessMRI</a>
           <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer" className="site-footer__link">Schedule Meeting</a>
         </div>
         <div>
           <p className="site-footer__col-title">Legal</p>
-          <a href="#" className="site-footer__link">Imprint</a>
-          <a href="#" className="site-footer__link">Privacy Policy</a>
+          <Link to="/imprint" className="site-footer__link">Imprint</Link>
+          <Link to="/privacy" className="site-footer__link">Privacy Policy</Link>
         </div>
       </div>
       <div className="site-footer__bottom">
         <p className="site-footer__copy">&copy; 2026 Digital Health Works Inc.</p>
-
       </div>
     </footer>
   )
