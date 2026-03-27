@@ -201,12 +201,7 @@ ul, ol { list-style: none; }
 .site-header--scrolled .site-nav__link--active {
   color: var(--color-accent);
 }
-.site-header--scrolled .site-header__logo img[src*="light"] {
-  display: none;
-}
-.site-header--scrolled .site-header__logo img[src*="dark"] {
-  display: block !important;
-}
+
 .site-header__inner {
   display: flex;
   align-items: center;
