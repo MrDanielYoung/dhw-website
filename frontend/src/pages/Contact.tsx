@@ -23,7 +23,7 @@ export default function Contact() {
                 We have years of experience with digital health and medical technology ventures.
               </p>
               <p className="section-desc">
-                Have a question about commercialization, regulatory, or how to refine a product? Get in touch to schedule a time for a call.
+                Have a question about commercialization, market access, or how to bring a product to market? Get in touch to schedule a time for a call.
               </p>
             </div>
             <div className="contact-section__right fade-in">

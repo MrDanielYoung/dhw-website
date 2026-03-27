@@ -32,7 +32,7 @@ export default function About() {
               <p>This work evolved from designing new products to building digital health ventures. While both were different in mission, they were commonly linked by frequently encountering regulatory and commercial challenges to bring these products to market.</p>
               <p>In the heart of Boston's MedTech scene, where life-saving, yet complex devices struggled to find their fit in the market and generate sustainable revenue, Romy Benninga experienced the same challenges.</p>
               <p>Too many innovative MedTech ventures were failing because they lacked access to resources that could help.</p>
-              <p>Motivated by these missed opportunities, and the pain of seeing incredible technologies go to waste, Romy and Daniel committed to a mission to create an agency that would offload the 'tedious' yet necessary market, commercialization, and regulatory work, and allow bold, innovative founders to focus on building their teams, companies, and products.</p>
+              <p>Motivated by these missed opportunities, and the pain of seeing incredible technologies go to waste, Romy and Daniel committed to a mission to create an agency that would offload the 'tedious' yet necessary market access, commercialization, and sales work, and allow bold, innovative founders to focus on building their teams, companies, and products.</p>
 
               <h3 style={{ fontFamily: 'var(--font-display)', fontSize: 'var(--text-lg)', marginBottom: 'var(--space-4)', color: 'var(--color-text)', marginTop: 'var(--space-8)' }}>
                 Digital Health Works was founded in 2023

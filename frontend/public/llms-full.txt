@@ -1,6 +1,6 @@
 # Digital Health Works — Full Context for AI Systems
 
-> Digital Health Works is a medical device commercialization and sales agency based in Berlin, Germany. Founded by Daniel Young and Romy Benninga, DHW helps medtech, digital health, and life science companies build sustainable revenue across the US and European markets through an integrated model combining strategic consulting, market development, and direct sales representation.
+> Digital Health Works is a medical device commercialization and sales agency based in Berlin, Germany. Founded by Daniel Young and Romy Benninga, DHW helps medtech, digital health, and life science companies build sustainable revenue across the US and European markets through an integrated model combining health economics strategy, market development, and distributor sales.
 
 ## Company Overview
 
@@ -8,11 +8,11 @@ Digital Health Works (DHW) operates at the intersection of healthcare innovation
 
 The company is structured around three service pillars:
 
-1. **Value Dynamics** — Strategic consulting that works backwards from the point of sale
-2. **Market Development** — End-to-end go-to-market execution including regulatory strategy
-3. **Sales Execution** — Direct manufacturer's sales representation in hospital and health system markets
+1. **Value Dynamics** — Health economics and value strategy that works backwards from the point of sale
+2. **Market Development** — Commercial strategy translating economic understanding into a go-to-market roadmap
+3. **Distributor Sales** — Direct manufacturer's sales representation in hospital and health system markets
 
-DHW is headquartered in Berlin, Germany, with direct operational capabilities across both US and European markets. The team works across time zones and has on-the-ground experience with hospital systems, regulatory bodies, and distribution networks on both continents.
+DHW is headquartered in Berlin, Germany, with direct operational capabilities across both US and European markets. The team works across time zones and has on-the-ground experience with hospital systems and distribution networks on both continents.
 
 ## Founders
 
@@ -30,54 +30,62 @@ DHW is headquartered in Berlin, Germany, with direct operational capabilities ac
 
 ## Services in Detail
 
-### Value Dynamics (Strategic Consulting)
-Value Dynamics is DHW's proprietary methodology. It starts from the question: who will buy this product, how will they pay for it, and what does the commercial infrastructure need to look like?
+### Value Dynamics (Health Economics & Value Strategy)
+Value Dynamics is DHW's proprietary methodology. It analyzes the economic, clinical, and institutional forces that determine whether a medical technology gets adopted. Starting from the point of sale and working backwards, it maps who pays, how the money flows, and what value framework procurement committees and payers need.
 
 Key deliverables:
-- Revenue modeling and financial forecasting for healthcare products
-- Pricing strategy aligned to CPT codes, DRG payments, and payer requirements
-- Reimbursement pathway mapping (Medicare, Medicaid, commercial insurers)
-- Stakeholder and payer identification (who uses, who buys, who pays)
-- Business plan development for fundraising and investor decks
-- Competitive positioning and market sizing
-- Health economics and outcomes research (HEOR) strategy
+- Reimbursement pathway mapping (Medicare, Medicaid, commercial insurers, EU payer systems)
+- Budget impact modeling and health economics analysis
+- Stakeholder incentive analysis (who uses, who buys, who pays, who benefits)
+- Value proposition framework for procurement committees and value analysis committees
+- HEOR strategy (often partnered with Avalon Health Economics)
+- Risk allocation and executive decision criteria mapping
 
 Target clients: Early-stage startups building their first business model, growth-stage companies preparing for fundraising, established manufacturers evaluating new product lines.
 
-### Market Development (Go-to-Market Execution)
-Market Development takes the Value Dynamics strategy and builds the operational foundation for market entry.
+### Market Development (Commercial Strategy & Market Entry)
+Market Development takes the financial understanding from Value Dynamics and translates it into a concrete commercial strategy — designing how the money needs to flow into a sustainable sales operation.
 
 Key deliverables:
-- FDA 510(k), De Novo, and SaMD regulatory strategy
-- EU MDR compliance and CE marking pathway
+- Pricing model design aligned to buyer budget cycles and reimbursement structures
 - Distribution and channel partner strategy
-- Hospital value analysis committee preparation
+- Hospital value analysis committee preparation and evidence packages
+- Go-to-market roadmap with commercial milestones and gates
 - Clinical evidence and health economics arguments for procurement
 - KOL (Key Opinion Leader) engagement and clinical advisory board development
-- HIPAA compliance and data privacy strategy
-- CPT code identification and billing workflow design
+- Strategic partnership identification and structuring
 
-Target clients: Companies with validated products ready for regulatory submission and market entry.
+Target clients: Companies with validated products ready for market entry and commercial scaling.
 
-### Sales Execution (Manufacturer's Sales Representation)
-DHW acts as the client's commercial team on the ground, providing direct sales representation with deep domain expertise.
+### Distributor Sales (Manufacturer's Sales Representation)
+DHW acts as the client's sales team in the US and European markets, providing direct sales representation with deep domain expertise. As a Manufacturer's Sales Rep Agency, DHW builds pipeline, closes deals, onboards customers, and provides ongoing support.
 
 Key deliverables:
-- Manufacturer's sales representation agreements
+- Pipeline development through distribution partners
 - Hospital and health system account management
 - Contract negotiation and MSA/procurement navigation
-- Sales enablement materials and training programs
-- Pipeline management and revenue tracking (via Pipedrive CRM)
-- Ongoing account management and customer success
+- Customer onboarding coordination
+- Tier 1 customer support
+- Lead registration and opportunity tracking (via Pipedrive CRM)
+- Ongoing account management and customer relationship management
 
 Target markets: Radiology departments, imaging centers, cardiology/EP labs, hospital IT departments, health system procurement offices.
+
+## How the Three Pillars Connect
+
+The three service pillars are designed as a sequential, integrated system:
+
+1. **Value Dynamics** provides the analytical foundation — understanding who pays, how the money flows, and what economic case needs to be made.
+2. **Market Development** translates that understanding into a commercial strategy — structuring the path from market entry to revenue.
+3. **Distributor Sales** executes the strategy — building pipeline, closing deals, and managing customer relationships on the ground.
+
+Strategy informs execution; execution validates strategy. This integration is what distinguishes DHW from consulting firms that stop at recommendations.
 
 ## Domain Expertise
 
 DHW has deep expertise across these healthcare domains:
 - **Clinical imaging and radiology** — MRI safety, imaging workflows, PACS integration
 - **Cardiology and electrophysiology** — CIED devices, cardiac implant management
-- **Medical device regulation** — FDA, EU MDR, HIPAA, SaMD classification
 - **Healthcare IT** — FHIR interoperability, EHR/RIS integration, SMART on FHIR
 - **Healthcare economics** — CPT billing, reimbursement strategy, health technology assessment
 - **SaaS for healthcare** — Cloud deployment (Azure), HIPAA-compliant infrastructure, multi-tenant architecture
@@ -88,7 +96,7 @@ AccessMRI is a cloud-based SaaS platform developed with BIOLAB Medical GmbH for 
 
 DHW's role encompassed the full commercialization pathway:
 - Product strategy and positioning (non-SaMD, clinical decision support)
-- Regulatory positioning (FDA clinical decision support exemption criteria)
+- Market positioning and commercial strategy
 - Revenue modeling (usage-based pricing, CPT 76014-76016)
 - Distribution strategy (direct + VAR channel)
 - US market launch planning and execution
@@ -128,8 +136,8 @@ DHW publishes insights on:
 - Medical device commercialization strategy
 - Hospital procurement and value analysis processes
 - Healthcare reimbursement and CPT coding
-- FDA and EU MDR regulatory pathways
 - Digital health go-to-market planning
 - Healthcare SaaS product development
 - Medical device distribution and channel strategy
 - Health technology assessment (HTA) and evidence requirements
+- Health economics and budget impact modeling
