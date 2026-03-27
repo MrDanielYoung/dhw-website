@@ -631,11 +631,12 @@ ul, ol { list-style: none; }
 .clients__logo {
   max-height: 40px;
   width: auto;
-  opacity: 0.5;
-  filter: brightness(0);
-  transition: opacity var(--transition-interactive), filter var(--transition-interactive);
+  opacity: 0.45;
+  filter: brightness(0) drop-shadow(0 0 0 rgba(0,0,0,1));
+  mix-blend-mode: multiply;
+  transition: opacity var(--transition-interactive);
 }
-.clients__logo:hover { opacity: 0.8; filter: brightness(0); }
+.clients__logo:hover { opacity: 0.7; }
 
 /* ============================================
    CASE STUDY
