@@ -652,10 +652,10 @@ ul, ol { list-style: none; }
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 50px;
+  height: 65px;
 }
 .clients__logo {
-  height: 36px;
+  height: 47px;
   width: auto;
   object-fit: contain;
   opacity: 0.5;
