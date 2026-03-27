@@ -13,13 +13,6 @@ const founders = [
   },
 ]
 
-const team = [
-  { name: 'David Schaerf', role: 'Product and Digital Expert', photo: '/assets/team/david-schaerf.png' },
-  { name: 'Pascal Werner', role: 'Regulatory Expert', photo: '/assets/team/pascal-werner.png' },
-  { name: 'Robert Rogers', role: 'Regulatory Expert', photo: '/assets/team/robert-rogers.png' },
-  { name: 'Martin Lange', role: 'Product and Digital Strategy', photo: '/assets/team/martin-lange.webp' },
-]
-
 export default function Team() {
   return (
     <main id="main">
@@ -52,30 +45,6 @@ export default function Team() {
                   <p className="founder-card__role">{founder.role}</p>
                   <p className="founder-card__bio">{founder.bio}</p>
                 </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* TEAM */}
-      <section className="section" style={{ background: 'var(--color-surface)' }}>
-        <div className="container">
-          <p className="section-label">The Team</p>
-          <h2 className="section-title">Experts in Commercialization</h2>
-          <div className="team-grid">
-            {team.map((member) => (
-              <div key={member.name} className="team-card fade-in">
-                <img
-                  src={member.photo}
-                  alt={member.name}
-                  className="team-card__photo"
-                  loading="lazy"
-                  width={400}
-                  height={400}
-                />
-                <h3 className="team-card__name">{member.name}</h3>
-                <p className="team-card__role">{member.role}</p>
               </div>
             ))}
           </div>
