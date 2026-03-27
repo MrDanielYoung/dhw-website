@@ -1,7 +1,7 @@
 export default function Hero() {
   return (
     <section className="hero" aria-labelledby="hero-heading">
-      <video className="hero__video" autoPlay muted playsInline loop preload="auto">
+      <video className="hero__video" autoPlay muted playsInline loop preload="none" poster="/assets/images/hero-poster.jpg">
         <source src="/assets/images/hero-video.mp4" type="video/mp4" />
       </video>
       <div className="hero__overlay"></div>

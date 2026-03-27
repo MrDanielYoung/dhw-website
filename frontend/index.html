@@ -235,26 +235,45 @@
 }
 </script>
 
-<!-- Usercentrics Consent Management -->
-<script id="usercentrics-cmp" src="https://web.cmp.usercentrics.eu/ui/loader.js" data-settings-id="HC-8Gk-TMJIqdw" async></script>
-
-<!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-J0337MKZVY"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-J0337MKZVY');
-</script>
-
-<!-- Pipedrive LeadBooster -->
-<script>
-  window.pipedriveLeadboosterConfig = {base: 'leadbooster-chat.pipedrive.com',companyId: 916498,playbookUuid: 'lAxoEaKr6Gb4OYGd',version: 2};
-  (function(){var w=window;if(w.LeadBooster){console.warn('LeadBooster already exists');}else{w.LeadBooster={q:[],on:function(n,h){this.q.push({t:'o',n:n,h:h})},trigger:function(n){this.q.push({t:'t',n:n})}}}})();
-</script>
-<script src="https://leadbooster-chat.pipedrive.com/assets/loader.js" async></script>
+<!-- Preload critical assets -->
+<link rel="preload" href="/assets/images/hero-poster.jpg" as="image">
+<link rel="preload" href="/assets/images/dhw-header-logo-light.png" as="image">
 </head>
 <body>
+  <!-- Defer third-party scripts to after page load -->
+  <script>
+    window.addEventListener('load', function() {
+      // Usercentrics Consent Management
+      var uc = document.createElement('script');
+      uc.id = 'usercentrics-cmp';
+      uc.src = 'https://web.cmp.usercentrics.eu/ui/loader.js';
+      uc.setAttribute('data-settings-id', 'HC-8Gk-TMJIqdw');
+      uc.async = true;
+      document.head.appendChild(uc);
+
+      // Google Analytics
+      var ga = document.createElement('script');
+      ga.src = 'https://www.googletagmanager.com/gtag/js?id=G-J0337MKZVY';
+      ga.async = true;
+      ga.onload = function() {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-J0337MKZVY');
+      };
+      document.head.appendChild(ga);
+
+      // Pipedrive LeadBooster (delay extra 2s — lowest priority)
+      setTimeout(function() {
+        window.pipedriveLeadboosterConfig = {base: 'leadbooster-chat.pipedrive.com',companyId: 916498,playbookUuid: 'lAxoEaKr6Gb4OYGd',version: 2};
+        window.LeadBooster = {q:[],on:function(n,h){this.q.push({t:'o',n:n,h:h})},trigger:function(n){this.q.push({t:'t',n:n})}};
+        var pd = document.createElement('script');
+        pd.src = 'https://leadbooster-chat.pipedrive.com/assets/loader.js';
+        pd.async = true;
+        document.head.appendChild(pd);
+      }, 2000);
+    });
+  </script>
   <!-- SSR-friendly noscript content for crawlers that don't execute JS -->
   <noscript>
     <h1>Digital Health Works — Medical Device Commercialization, Market Access &amp; Sales Agency</h1>

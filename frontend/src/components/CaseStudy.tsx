@@ -7,7 +7,7 @@ export default function CaseStudy() {
         <div className="case-study__grid">
           <div className="fade-in">
             <img
-              src="/assets/images/accessmri.png"
+              src="/assets/images/accessmri.jpg"
               alt="AccessMRI platform — CIED MRI safety and labeling verification for cardiac implant patients"
               className="case-study__image"
               loading="lazy"
