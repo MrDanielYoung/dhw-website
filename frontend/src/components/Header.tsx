@@ -34,21 +34,12 @@ export default function Header() {
     <header className={`site-header${scrolled ? ' site-header--scrolled' : ''}`} id="site-header">
       <div className="site-header__inner">
         <Link to="/" className="site-header__logo" aria-label="Digital Health Works — Home">
-          {scrolled ? (
-            <img
-              src="/assets/images/dhw-header-logo-dark.png"
-              srcSet="/assets/images/dhw-header-logo-dark.png 1x, /assets/images/dhw-header-logo-dark@2x.png 2x"
-              alt="Digital Health Works"
-              height="32"
-            />
-          ) : (
-            <img
-              src="/assets/images/dhw-header-logo-light.png"
-              srcSet="/assets/images/dhw-header-logo-light.png 1x, /assets/images/dhw-header-logo-light@2x.png 2x"
-              alt="Digital Health Works"
-              height="32"
-            />
-          )}
+          <img
+            src="/assets/images/dhw-header-logo-light.png"
+            srcSet="/assets/images/dhw-header-logo-light.png 1x, /assets/images/dhw-header-logo-light@2x.png 2x"
+            alt="Digital Health Works"
+            height="32"
+          />
         </Link>
 
         <nav className={`site-nav${mobileOpen ? ' is-open' : ''}`} aria-label="Main navigation">
@@ -68,7 +59,7 @@ export default function Header() {
         </nav>
 
         <button className="mobile-toggle" aria-label="Open menu" onClick={() => setMobileOpen(true)}>
-          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke={scrolled ? '#3a3a3c' : '#ffffff'} strokeWidth="2.5" strokeLinecap="round"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#ffffff" strokeWidth="2.5" strokeLinecap="round"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
         </button>
       </div>
     </header>
