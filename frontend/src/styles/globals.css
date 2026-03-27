@@ -51,11 +51,11 @@ ul, ol { list-style: none; }
   --space-24: 6rem;
   --space-32: 8rem;
 
-  /* Surfaces — warm whites with sage hint */
-  --color-bg:             #f7f9f5;
+  /* Surfaces — clean warm whites */
+  --color-bg:             #f9f9f7;
   --color-surface:        #ffffff;
-  --color-surface-2:      #eef2ea;
-  --color-surface-offset: #e5ebe1;
+  --color-surface-2:      #f2f2f0;
+  --color-surface-offset: #eaeae8;
   --color-divider:        #d4d6d2;
   --color-border:         #bfc1bd;
 
@@ -188,7 +188,7 @@ ul, ol { list-style: none; }
   transition: background 0.4s var(--ease-out), box-shadow 0.4s var(--ease-out), backdrop-filter 0.4s var(--ease-out);
 }
 .site-header--scrolled {
-  background: rgba(247, 249, 245, 0.88);
+  background: rgba(249, 249, 247, 0.90);
   backdrop-filter: blur(20px);
   box-shadow: 0 1px 0 rgba(0,0,0,0.06);
 }

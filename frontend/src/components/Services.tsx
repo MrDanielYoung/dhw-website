@@ -15,10 +15,10 @@ const services = [
   {
     number: '02',
     title: 'Market Development',
-    subtitle: 'Go-to-Market Execution & Regulatory Strategy',
-    desc: 'End-to-end go-to-market execution for medical devices and digital health products. We navigate regulatory pathways and build the commercial foundation for sustainable market entry.',
+    subtitle: 'Go-to-Market Strategy & Market Entry Execution',
+    desc: 'We design and implement go-to-market strategy for medical devices and digital health products — positioning, pricing, channel design, distribution models, and strategic partnerships for scalable market entry.',
     items: [
-      'FDA 510(k) and EU MDR regulatory strategy',
+      'Go-to-market planning and positioning',
       'Distribution and channel partner strategy',
       'Hospital value analysis committee preparation',
       'Clinical evidence and health economics arguments',

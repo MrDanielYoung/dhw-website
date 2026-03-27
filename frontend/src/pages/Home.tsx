@@ -1,8 +1,8 @@
 import Hero from '../components/Hero'
-import ChatFeature from '../components/ChatFeature'
 import Approach from '../components/Approach'
 import MissionBanner from '../components/MissionBanner'
 import Services from '../components/Services'
+import ChatFeature from '../components/ChatFeature'
 import CTASection from '../components/CTASection'
 import Clients from '../components/Clients'
 import CaseStudy from '../components/CaseStudy'
@@ -12,10 +12,10 @@ export default function Home() {
   return (
     <main id="main">
       <Hero />
-      <ChatFeature />
       <Approach />
       <MissionBanner />
       <Services />
+      <ChatFeature />
       <CTASection />
       <Clients />
       <CaseStudy />
