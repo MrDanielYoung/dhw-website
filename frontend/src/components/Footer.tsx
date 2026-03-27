@@ -38,9 +38,7 @@ export default function Footer() {
       </div>
       <div className="site-footer__bottom">
         <p className="site-footer__copy">&copy; 2026 Digital Health Works Inc.</p>
-        <p className="site-footer__attribution">
-          <a href="https://www.perplexity.ai/computer" target="_blank" rel="noopener noreferrer">Created with Perplexity Computer</a>
-        </p>
+
       </div>
     </footer>
   )

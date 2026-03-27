@@ -41,6 +41,13 @@ export default function Header() {
             height="32"
             style={{ display: 'block' }}
           />
+          <img
+            src="/assets/images/dhw-header-logo-dark.png"
+            srcSet="/assets/images/dhw-header-logo-dark.png 1x, /assets/images/dhw-header-logo-dark@2x.png 2x"
+            alt="Digital Health Works"
+            height="32"
+            style={{ display: 'none' }}
+          />
         </Link>
 
         <nav className={`site-nav${mobileOpen ? ' is-open' : ''}`} aria-label="Main navigation">
