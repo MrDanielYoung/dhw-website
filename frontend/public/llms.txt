@@ -1,0 +1,36 @@
+# Digital Health Works
+
+> Digital Health Works is a medical device commercialization and sales agency based in Berlin, Germany. We help medtech, digital health, and life science companies build sustainable revenue across the US and European markets through strategic consulting (Value Dynamics), go-to-market execution (Market Development), and direct sales representation (Sales Execution).
+
+Digital Health Works was co-founded by Daniel Young and Romy Benninga. The company operates as a Manufacturer's Sales Rep Agency paired with Value Dynamics consulting and Market Development services — providing a complete commercialization solution that integrates both strategy and execution.
+
+Our methodology, Value Dynamics, works backwards from the point of sale: identifying who will buy, how they will pay, and what commercial infrastructure is needed before going to market. This approach produces validated business models, revenue strategies, and go-to-market plans grounded in healthcare economics.
+
+We serve medical device manufacturers, digital health companies, health technology startups, and life science ventures — from early-stage teams developing prototypes to established manufacturers seeking new market entry. Our domain expertise covers clinical imaging, cardiology, radiology, CIED MRI safety, remote patient monitoring, AI-based diagnostics, and clinical decision support.
+
+Regulatory coverage includes FDA 510(k), De Novo, SaMD classification (US), EU MDR compliance and CE marking (Europe), HIPAA, CPT billing and reimbursement, and health technology assessment (HTA).
+
+## Core Pages
+
+- [Home](https://digitalhealthworks.com/): Company overview, services, and value proposition
+- [About](https://digitalhealthworks.com/about): Company history, founders, and mission
+- [Team](https://digitalhealthworks.com/team): Team profiles — Daniel Young and Romy Benninga
+- [Contact](https://digitalhealthworks.com/contact): Contact form and scheduling
+- [Insights](https://digitalhealthworks.com/insights): Thought leadership articles on medical device commercialization
+
+## Services
+
+- [Value Dynamics](https://digitalhealthworks.com/services#value-dynamics): Strategic consulting — revenue modeling, pricing strategy, reimbursement mapping, business plan development, competitive positioning
+- [Market Development](https://digitalhealthworks.com/services#market-development): Go-to-market execution — FDA/EU MDR regulatory strategy, distribution channels, hospital value analysis, clinical evidence, KOL engagement
+- [Sales Execution](https://digitalhealthworks.com/services#sales-execution): Manufacturer's sales representation — hospital account management, contract negotiation, procurement navigation, sales enablement
+
+## Key Articles
+
+- [9 Moves That Separate Medical Device Products That Sell from Those That Stall](https://digitalhealthworks.com/insights/9-moves-medical-device-commercialization): Comprehensive commercialization playbook for medical device companies
+- [Working Backwards from the Invoice](https://digitalhealthworks.com/insights/working-backwards-from-the-invoice): The Value Dynamics methodology explained — how to build a revenue strategy before you go to market
+- [Hospital Procurement: What Every Medtech Company Needs to Know](https://digitalhealthworks.com/insights/hospital-procurement-medtech): Guide to navigating hospital purchasing processes and value analysis committees
+
+## Optional
+
+- [Schedule a Call](https://outlook.office.com/book/DHWWebsiteMeeting@digitalhealthworks.com/): Book a discovery meeting with Digital Health Works
+- [LinkedIn](https://www.linkedin.com/company/digital-health-works/): Company LinkedIn profile

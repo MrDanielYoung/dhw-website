@@ -51,6 +51,27 @@ if serve_dir.is_dir():
     async def articles_json():
         return FileResponse(serve_dir / "articles-content.json")
 
+    # SEO + AI/LLM discovery files
+    @app.get("/robots.txt")
+    async def robots_txt():
+        return FileResponse(serve_dir / "robots.txt", media_type="text/plain; charset=utf-8")
+
+    @app.get("/sitemap.xml")
+    async def sitemap_xml():
+        return FileResponse(serve_dir / "sitemap.xml", media_type="application/xml")
+
+    @app.get("/llms.txt")
+    async def llms_txt():
+        return FileResponse(serve_dir / "llms.txt", media_type="text/plain; charset=utf-8")
+
+    @app.get("/llms-full.txt")
+    async def llms_full_txt():
+        return FileResponse(serve_dir / "llms-full.txt", media_type="text/plain; charset=utf-8")
+
+    @app.get("/index.html.md")
+    async def index_md():
+        return FileResponse(serve_dir / "index.html.md", media_type="text/markdown; charset=utf-8")
+
     # SPA catch-all: serve index.html for any non-API route
     @app.get("/{full_path:path}")
     async def spa_fallback(request: Request, full_path: str):

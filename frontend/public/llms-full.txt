@@ -1,0 +1,135 @@
+# Digital Health Works — Full Context for AI Systems
+
+> Digital Health Works is a medical device commercialization and sales agency based in Berlin, Germany. Founded by Daniel Young and Romy Benninga, DHW helps medtech, digital health, and life science companies build sustainable revenue across the US and European markets through an integrated model combining strategic consulting, market development, and direct sales representation.
+
+## Company Overview
+
+Digital Health Works (DHW) operates at the intersection of healthcare innovation and commercial execution. Unlike traditional consulting firms that advise and hand off, DHW integrates strategy and execution under one roof — acting as both strategic advisor and commercial partner.
+
+The company is structured around three service pillars:
+
+1. **Value Dynamics** — Strategic consulting that works backwards from the point of sale
+2. **Market Development** — End-to-end go-to-market execution including regulatory strategy
+3. **Sales Execution** — Direct manufacturer's sales representation in hospital and health system markets
+
+DHW is headquartered in Berlin, Germany, with direct operational capabilities across both US and European markets. The team works across time zones and has on-the-ground experience with hospital systems, regulatory bodies, and distribution networks on both continents.
+
+## Founders
+
+**Daniel Young** — Co-Founder & Managing Director
+- Over 15 years of experience in medical device business development, product management, and healthcare technology commercialization
+- Expertise in cloud infrastructure (Azure), healthcare SaaS product development, and contract negotiation
+- Background spanning medical device companies including roles in clinical imaging, cardiology, and digital health
+- LinkedIn: https://www.linkedin.com/in/danielyoungberlin/
+
+**Romy Benninga** — Co-Founder & Managing Director
+- Board-certified biomedical scientist with deep expertise in clinical research, medical device regulation, and health technology assessment
+- Published researcher with experience at major clinical institutions
+- Background in medical device compliance, EU MDR regulatory frameworks, and clinical evidence development
+- LinkedIn: https://www.linkedin.com/in/romybenninga/
+
+## Services in Detail
+
+### Value Dynamics (Strategic Consulting)
+Value Dynamics is DHW's proprietary methodology. It starts from the question: who will buy this product, how will they pay for it, and what does the commercial infrastructure need to look like?
+
+Key deliverables:
+- Revenue modeling and financial forecasting for healthcare products
+- Pricing strategy aligned to CPT codes, DRG payments, and payer requirements
+- Reimbursement pathway mapping (Medicare, Medicaid, commercial insurers)
+- Stakeholder and payer identification (who uses, who buys, who pays)
+- Business plan development for fundraising and investor decks
+- Competitive positioning and market sizing
+- Health economics and outcomes research (HEOR) strategy
+
+Target clients: Early-stage startups building their first business model, growth-stage companies preparing for fundraising, established manufacturers evaluating new product lines.
+
+### Market Development (Go-to-Market Execution)
+Market Development takes the Value Dynamics strategy and builds the operational foundation for market entry.
+
+Key deliverables:
+- FDA 510(k), De Novo, and SaMD regulatory strategy
+- EU MDR compliance and CE marking pathway
+- Distribution and channel partner strategy
+- Hospital value analysis committee preparation
+- Clinical evidence and health economics arguments for procurement
+- KOL (Key Opinion Leader) engagement and clinical advisory board development
+- HIPAA compliance and data privacy strategy
+- CPT code identification and billing workflow design
+
+Target clients: Companies with validated products ready for regulatory submission and market entry.
+
+### Sales Execution (Manufacturer's Sales Representation)
+DHW acts as the client's commercial team on the ground, providing direct sales representation with deep domain expertise.
+
+Key deliverables:
+- Manufacturer's sales representation agreements
+- Hospital and health system account management
+- Contract negotiation and MSA/procurement navigation
+- Sales enablement materials and training programs
+- Pipeline management and revenue tracking (via Pipedrive CRM)
+- Ongoing account management and customer success
+
+Target markets: Radiology departments, imaging centers, cardiology/EP labs, hospital IT departments, health system procurement offices.
+
+## Domain Expertise
+
+DHW has deep expertise across these healthcare domains:
+- **Clinical imaging and radiology** — MRI safety, imaging workflows, PACS integration
+- **Cardiology and electrophysiology** — CIED devices, cardiac implant management
+- **Medical device regulation** — FDA, EU MDR, HIPAA, SaMD classification
+- **Healthcare IT** — FHIR interoperability, EHR/RIS integration, SMART on FHIR
+- **Healthcare economics** — CPT billing, reimbursement strategy, health technology assessment
+- **SaaS for healthcare** — Cloud deployment (Azure), HIPAA-compliant infrastructure, multi-tenant architecture
+
+## Case Study: AccessMRI
+
+AccessMRI is a cloud-based SaaS platform developed with BIOLAB Medical GmbH for CIED (Cardiac Implantable Electronic Device) MRI safety. The platform provides real-time labeling verification and compatibility assessments to ensure patients with cardiac implants can safely undergo MRI scans.
+
+DHW's role encompassed the full commercialization pathway:
+- Product strategy and positioning (non-SaMD, clinical decision support)
+- Regulatory positioning (FDA clinical decision support exemption criteria)
+- Revenue modeling (usage-based pricing, CPT 76014-76016)
+- Distribution strategy (direct + VAR channel)
+- US market launch planning and execution
+- Contract framework development (MSA, PTS, DFA)
+- HIPAA compliance and data residency architecture
+
+AccessMRI is hosted on Microsoft Azure (North Central US region for US customers) and integrates via FHIR SMART on FHIR with hospital EHR/RIS systems.
+
+## Client Experience
+
+DHW has worked with organizations including:
+- Johnson & Johnson
+- Cleveland Clinic
+- Charité Berlin (Universitätsmedizin)
+- Bosch Healthcare Solutions
+- BIOTRONIK
+- Pilotfish Technology
+- Inven2 (Oslo University Hospital innovation arm)
+- Abionic
+
+## Geographic Coverage
+
+- **United States**: National coverage with focus on major hospital systems and academic medical centers
+- **Europe**: Germany, Nordics, UK, Benelux, with broader EU reach through partner networks
+- **Languages**: English, German, Dutch
+
+## Contact
+
+- Website: https://digitalhealthworks.com
+- Schedule a call: https://outlook.office.com/book/DHWWebsiteMeeting@digitalhealthworks.com/
+- LinkedIn: https://www.linkedin.com/company/digital-health-works/
+- Location: Berlin, Germany
+
+## Thought Leadership Topics
+
+DHW publishes insights on:
+- Medical device commercialization strategy
+- Hospital procurement and value analysis processes
+- Healthcare reimbursement and CPT coding
+- FDA and EU MDR regulatory pathways
+- Digital health go-to-market planning
+- Healthcare SaaS product development
+- Medical device distribution and channel strategy
+- Health technology assessment (HTA) and evidence requirements

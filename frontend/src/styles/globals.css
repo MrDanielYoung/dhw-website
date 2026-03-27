@@ -576,6 +576,24 @@ ul, ol { list-style: none; }
   color: var(--color-text-muted);
   line-height: 1.65;
 }
+.service-card__list {
+  list-style: none;
+  margin-top: var(--space-4);
+  padding: 0;
+}
+.service-card__list li {
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+  padding: 0.2rem 0;
+  padding-left: 1.25rem;
+  position: relative;
+}
+.service-card__list li::before {
+  content: '→';
+  position: absolute;
+  left: 0;
+  color: var(--color-accent);
+}
 
 /* ============================================
    CTA SECTION
