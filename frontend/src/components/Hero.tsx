@@ -1,9 +1,40 @@
+import { useEffect, useRef, useState } from 'react'
+
 export default function Hero() {
+  const videoRef = useRef<HTMLVideoElement>(null)
+  const [videoLoaded, setVideoLoaded] = useState(false)
+
+  useEffect(() => {
+    // Delay video load until after page is interactive
+    const timer = setTimeout(() => {
+      if (videoRef.current) {
+        videoRef.current.src = '/assets/images/hero-video.mp4'
+        videoRef.current.load()
+        videoRef.current.play().catch(() => {})
+        setVideoLoaded(true)
+      }
+    }, 1500)
+    return () => clearTimeout(timer)
+  }, [])
+
   return (
     <section className="hero" aria-labelledby="hero-heading">
-      <video className="hero__video" autoPlay muted playsInline loop preload="none" poster="/assets/images/hero-poster.jpg">
-        <source src="/assets/images/hero-video.mp4" type="video/mp4" />
-      </video>
+      <div
+        className="hero__poster"
+        style={{
+          backgroundImage: 'url(/assets/images/hero-poster.jpg)',
+          opacity: videoLoaded ? 0 : 1,
+        }}
+      />
+      <video
+        ref={videoRef}
+        className="hero__video"
+        muted
+        playsInline
+        loop
+        preload="none"
+        style={{ opacity: videoLoaded ? 1 : 0 }}
+      />
       <div className="hero__overlay"></div>
       <div className="hero__content">
         <h1 id="hero-heading" className="hero__title">We connect medical innovations to the people who need them most.</h1>
