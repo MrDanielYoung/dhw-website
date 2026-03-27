@@ -22,9 +22,8 @@ ul, ol { list-style: none; }
 
 /* ============================================
    DHW Design System — Authoritative Healthcare Consultancy
-   Palette: Deep Navy + Warm White + Restrained Green
-   Typography: DIN Pro (headings + body) via Adobe Typekit,
-              Barlow (Google Fonts fallback)
+   Palette: Warm Charcoal + Sage White + Restrained Green
+   Typography: Source Sans 3 (humanist sans-serif) via Google Fonts
    ============================================ */
 
 :root, [data-theme="light"] {
@@ -103,9 +102,9 @@ ul, ol { list-style: none; }
   --content-default: 1000px;
   --content-wide: 1200px;
 
-  /* Font families — DIN Pro via Adobe Typekit, Barlow as fallback */
-  --font-display: 'din-2014', 'Barlow', 'Helvetica Neue', Arial, sans-serif;
-  --font-body: 'din-2014', 'Barlow', 'Helvetica Neue', Arial, sans-serif;
+  /* Font families — Source Sans 3 (humanist sans-serif) */
+  --font-display: 'Source Sans 3', 'Helvetica Neue', Arial, sans-serif;
+  --font-body: 'Source Sans 3', 'Helvetica Neue', Arial, sans-serif;
 }
 
 [data-theme="dark"] {
