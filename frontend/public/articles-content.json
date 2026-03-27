@@ -1,0 +1,83 @@
+[
+  {
+    "slug": "medical-commercialization-9-moves",
+    "title": "Medical Device Commercialization: 9 \"Working Backwards\" Moves to Reach your First Revenues",
+    "subtitle": "Designing from the invoice back to product development",
+    "author": "Daniel Young",
+    "date": "2026-02-16",
+    "pillar": "value-dynamics",
+    "pillar_label": "Value Dynamics",
+    "excerpt": "Most ventures do not stall because the science is weak. They stall because the commercial system that makes a purchase routine never gets built.",
+    "content_file": "tool_calls/fetch_url/output_mn1rejvd.json"
+  },
+  {
+    "slug": "moving-beyond-a-pilot",
+    "title": "Moving Beyond a Pilot",
+    "subtitle": "How to move from a pilot project to a successful commercial project",
+    "author": "Daniel Young",
+    "date": "2026-02-16",
+    "pillar": "market-development",
+    "pillar_label": "Market Development",
+    "excerpt": "The healthcare sector is flooded with innovation, but most pilots never scale. Interest is there, but converting a digital health pilot into a paying customer is a different story."
+  },
+  {
+    "slug": "how-to-cross-the-emr-moat",
+    "title": "How to Cross the EMR Moat",
+    "subtitle": "Breaking Through Barriers: Innovative Paths into the EMR Market",
+    "author": "Daniel Young",
+    "date": "2025-02-18",
+    "pillar": "market-development",
+    "pillar_label": "Market Development",
+    "excerpt": "In the ever-evolving world of digital health, the quest for innovation often feels like crossing a sprawling, fortified moat."
+  },
+  {
+    "slug": "sales-strategy-for-medical-devices",
+    "title": "Sales Strategy for Medical Devices",
+    "subtitle": "Glengarry... or Sales Strategy for Medical Devices",
+    "author": "Daniel Young",
+    "date": "2024-03-06",
+    "pillar": "sales",
+    "pillar_label": "Sales Execution",
+    "excerpt": "Crafting a sales strategy for medical devices requires detailed research and planning. Identifying your target audience, mapping out the discovery process, and establishing the product's role in the care path."
+  },
+  {
+    "slug": "measuring-value-strategic-alliance",
+    "title": "Measuring Value with Strategic Alliances",
+    "subtitle": "Creating alliances to increase and measure value",
+    "author": "Daniel Young",
+    "date": "2025-06-17",
+    "pillar": "value-dynamics",
+    "pillar_label": "Value Dynamics",
+    "excerpt": "Measuring value is as important (and challenging) as clinical validation, but it's a task that's often ignored by many health tech ventures."
+  },
+  {
+    "slug": "measuring-impact",
+    "title": "Measuring Impact",
+    "subtitle": "Understanding where the real value lies in digital health",
+    "author": "Daniel Young",
+    "date": "2025-06-17",
+    "pillar": "value-dynamics",
+    "pillar_label": "Value Dynamics",
+    "excerpt": "Validation and impact are critical for every digital health application. Demonstrating that an application works and has a positive clinical effect validates the product."
+  },
+  {
+    "slug": "a-clear-need-for-validation",
+    "title": "A Clear Need for Validation",
+    "subtitle": "Why clinical evidence matters for digital health ventures",
+    "author": "Daniel Young",
+    "date": "2025-06-17",
+    "pillar": "market-development",
+    "pillar_label": "Market Development",
+    "excerpt": "A recent analysis of the market found that over 40% of digital health products lacked clinical trials or relevant regulatory filings."
+  },
+  {
+    "slug": "validation-and-measuring-impact-of-digital-health-apps",
+    "title": "Validation and Measuring Impact of Digital Health Apps",
+    "subtitle": "Does the plane fly?",
+    "author": "Daniel Young",
+    "date": "2025-06-17",
+    "pillar": "value-dynamics",
+    "pillar_label": "Value Dynamics",
+    "excerpt": "During the summer lull, it's worth revisiting the fundamentals of validation and impact measurement for digital health applications."
+  }
+]
