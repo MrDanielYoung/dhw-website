@@ -613,32 +613,43 @@ ul, ol { list-style: none; }
 /* ============================================
    CLIENTS
    ============================================ */
-.clients { background: var(--color-surface); }
+.clients { background: var(--color-surface); overflow: hidden; }
 .clients .section-label { color: var(--color-accent); }
 .clients .section-title { color: var(--color-navy); }
 .clients .section-desc { color: var(--color-text-muted); }
-.clients__grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: var(--space-8);
+.clients__marquee-wrap {
   margin-top: var(--space-10);
-  align-items: center;
-  justify-items: center;
+  overflow: hidden;
+  mask-image: linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%);
 }
-@media (min-width: 768px) {
-  .clients__grid { grid-template-columns: repeat(5, 1fr); }
+.clients__marquee {
+  display: flex;
+  gap: var(--space-16);
+  animation: marquee-scroll 30s linear infinite;
+  width: max-content;
+}
+.clients__marquee-item {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
 }
 .clients__logo {
-  height: 30px;
+  height: 36px;
   width: auto;
-  max-width: 140px;
   object-fit: contain;
-  opacity: 0.45;
+  opacity: 0.5;
   filter: brightness(0);
   mix-blend-mode: multiply;
   transition: opacity var(--transition-interactive);
 }
-.clients__logo:hover { opacity: 0.7; }
+.clients__logo:hover { opacity: 0.8; }
+@keyframes marquee-scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
 
 /* ============================================
    CASE STUDY
