@@ -14,13 +14,13 @@ export default function About() {
         <div className="container">
           <div className="approach__grid">
             <div className="approach__left fade-in">
-              <h2 className="approach__statement">
+              <h2 className="approach__statement" style={{ fontSize: 'var(--text-lg)' }}>
                 Romy Benninga and Daniel Young founded Digital Health Works.
               </h2>
-              <h2 className="approach__statement">
+              <h2 className="approach__statement" style={{ fontSize: 'var(--text-lg)' }}>
                 The agency supports digital health and MedTech ventures to enter the market, finding paths to sustainable revenue.
               </h2>
-              <h2 className="approach__statement">
+              <h2 className="approach__statement" style={{ fontSize: 'var(--text-lg)' }}>
                 We use the market to connect health innovations with the patients and care providers who need them most.
               </h2>
             </div>

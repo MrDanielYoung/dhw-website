@@ -1,8 +1,9 @@
 from pathlib import Path
 
-from fastapi import FastAPI
+from fastapi import FastAPI, Request
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
+from fastapi.responses import FileResponse
 
 from app.config import settings
 from app.routes import chat, health
@@ -30,5 +31,37 @@ static_dir = Path(__file__).parent.parent / "static"
 frontend_dist = Path(__file__).parent.parent.parent / "frontend" / "dist"
 
 serve_dir = static_dir if static_dir.is_dir() else frontend_dist
+
 if serve_dir.is_dir():
-    app.mount("/", StaticFiles(directory=str(serve_dir), html=True), name="static")
+    # Mount static assets (JS, CSS, images) at /assets
+    assets_dir = serve_dir / "assets"
+    if assets_dir.is_dir():
+        app.mount("/assets", StaticFiles(directory=str(assets_dir)), name="assets")
+    
+    # Serve other static files (favicon, etc.)
+    @app.get("/favicon.png")
+    async def favicon_png():
+        return FileResponse(serve_dir / "favicon.png")
+
+    @app.get("/favicon.svg")
+    async def favicon_svg():
+        return FileResponse(serve_dir / "favicon.svg")
+
+    @app.get("/articles-content.json")
+    async def articles_json():
+        return FileResponse(serve_dir / "articles-content.json")
+
+    # SPA catch-all: serve index.html for any non-API route
+    @app.get("/{full_path:path}")
+    async def spa_fallback(request: Request, full_path: str):
+        # Don't catch API routes
+        if full_path.startswith("api/"):
+            return {"detail": "Not Found"}
+        
+        # Check if it's a real file in the static directory
+        file_path = serve_dir / full_path
+        if file_path.is_file():
+            return FileResponse(file_path)
+        
+        # Otherwise serve index.html (SPA routing)
+        return FileResponse(serve_dir / "index.html")

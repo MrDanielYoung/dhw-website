@@ -629,10 +629,12 @@ ul, ol { list-style: none; }
   .clients__grid { grid-template-columns: repeat(5, 1fr); }
 }
 .clients__logo {
-  max-height: 40px;
+  height: 30px;
   width: auto;
+  max-width: 140px;
+  object-fit: contain;
   opacity: 0.45;
-  filter: brightness(0) drop-shadow(0 0 0 rgba(0,0,0,1));
+  filter: brightness(0);
   mix-blend-mode: multiply;
   transition: opacity var(--transition-interactive);
 }
@@ -654,7 +656,8 @@ ul, ol { list-style: none; }
 }
 .case-study__image {
   object-fit: cover;
-  aspect-ratio: 16 / 9;
+  object-position: top left;
+  aspect-ratio: 4 / 3;
   width: 100%;
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-lg);
