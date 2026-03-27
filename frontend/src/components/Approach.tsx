@@ -8,7 +8,7 @@ export default function Approach() {
             <h2 className="approach__statement">
               Digital Health Works is a medical device commercialization and sales agency.
             </h2>
-            <p className="approach__body-text" style={{ marginTop: 'var(--space-4)', color: 'var(--color-text-muted)', lineHeight: '1.7' }}>
+            <p style={{ marginTop: 'var(--space-4)', color: 'var(--color-text-muted)', lineHeight: '1.7', fontSize: 'var(--text-base)' }}>
               We help medtech, digital health, and life science companies build revenue across the US and Europe — through health economics strategy, market development, and distributor sales.
             </p>
           </div>

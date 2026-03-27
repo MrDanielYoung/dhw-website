@@ -22,7 +22,7 @@ export default function CaseStudy() {
               <a href="https://accessmri.io/" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--color-teal)', textDecoration: 'none', fontWeight: 600 }}>AccessMRI</a> is a cloud-based SaaS platform for CIED (Cardiac Implantable Electronic Device) MRI safety — providing real-time labeling verification and compatibility assessments to ensure patients with cardiac implants can safely undergo MRI scans.
             </p>
             <p className="case-study__desc">
-              Digital Health Works led the full commercialization pathway: product strategy, regulatory positioning (non-SaMD, HIPAA compliant), revenue modeling (usage-based pricing aligned to CPT codes), distribution strategy, and US market launch — demonstrating our end-to-end capabilities from initial concept through commercial traction.
+              Digital Health Works led the full commercialization pathway: product strategy, market positioning, revenue modeling (usage-based pricing aligned to CPT codes), distribution strategy, and US market launch — demonstrating our end-to-end capabilities from initial concept through commercial traction.
             </p>
             <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem', marginTop: '1.5rem' }}>
               <div style={{ borderLeft: '3px solid var(--color-teal)', paddingLeft: '1rem' }}>

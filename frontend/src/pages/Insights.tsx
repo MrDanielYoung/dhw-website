@@ -51,7 +51,7 @@ const articles: Article[] = [
     author: 'Daniel Young',
     date: '2024-03-06',
     pillar: 'sales',
-    pillar_label: 'Sales Execution',
+    pillar_label: 'Distributor Sales',
     excerpt: 'Crafting a sales strategy for medical devices requires detailed research and planning. Identifying your target audience, mapping out the discovery process, and establishing the product\'s role in the care path.',
   },
   {
@@ -100,7 +100,7 @@ const FILTERS = [
   { key: 'all', label: 'All' },
   { key: 'value-dynamics', label: 'Value Dynamics' },
   { key: 'market-development', label: 'Market Development' },
-  { key: 'sales', label: 'Sales Execution' },
+  { key: 'sales', label: 'Distributor Sales' },
 ]
 
 function formatDate(dateStr: string): string {
