@@ -6,11 +6,11 @@ export default function Approach() {
           <div className="approach__left fade-in">
             <p className="section-label">Our Approach</p>
             <h2 className="approach__statement">
-              We are experts in the <em>value dynamics</em> of digital health and medical technologies.
+              Digital Health Works is a medical device commercialization and sales agency.
             </h2>
-            <h2 className="approach__statement" style={{ marginTop: 'var(--space-6)' }}>
-              We develop markets. We make <em>sales happen</em>.
-            </h2>
+            <p className="approach__body-text" style={{ marginTop: 'var(--space-4)', color: 'var(--color-text-muted)', lineHeight: '1.7' }}>
+              We help medtech, digital health, and life science companies build revenue across the US and Europe — through health economics strategy, market development, and distributor sales.
+            </p>
           </div>
           <div className="approach__body fade-in">
             <p>Most medical technologies are built forward: designed, validated, approved, then handed to sales with the assumption that revenue will follow. <strong>It rarely does.</strong></p>
