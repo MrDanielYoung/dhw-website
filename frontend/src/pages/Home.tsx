@@ -3,7 +3,6 @@ import Approach from '../components/Approach'
 import MissionBanner from '../components/MissionBanner'
 import Services from '../components/Services'
 import CTASection from '../components/CTASection'
-import ChatFeature from '../components/ChatFeature'
 import Clients from '../components/Clients'
 import CaseStudy from '../components/CaseStudy'
 import ContactForm from '../components/ContactForm'
@@ -16,7 +15,6 @@ export default function Home() {
       <MissionBanner />
       <Services />
       <CTASection />
-      <ChatFeature />
       <Clients />
       <CaseStudy />
       <ContactForm />

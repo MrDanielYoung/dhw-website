@@ -4,6 +4,7 @@ import About from './pages/About'
 import Team from './pages/Team'
 import Insights from './pages/Insights'
 import Contact from './pages/Contact'
+import Advisor from './pages/Advisor'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import ScrollToTop from './components/ScrollToTop'
@@ -19,6 +20,7 @@ function App() {
         <Route path="/team" element={<Team />} />
         <Route path="/insights" element={<Insights />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/advisor" element={<Advisor />} />
       </Routes>
       <Footer />
     </>

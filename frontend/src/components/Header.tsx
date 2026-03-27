@@ -46,11 +46,7 @@ export default function Header() {
           <button className="mobile-close" aria-label="Close menu" onClick={() => setMobileOpen(false)}>
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M18 6 6 18M6 6l12 12"/></svg>
           </button>
-          {location.pathname === '/' ? (
-            <a href="#advisor" className="site-nav__link" onClick={handleAdvisorClick}>Advisor</a>
-          ) : (
-            <Link to="/#advisor" className="site-nav__link">Advisor</Link>
-          )}
+          <Link to="/advisor" className={`site-nav__link${isActive('/advisor') ? ' site-nav__link--active' : ''}`}>Meet Kathy</Link>
           <Link to="/about" className={`site-nav__link${isActive('/about') ? ' site-nav__link--active' : ''}`}>About</Link>
           <Link to="/insights" className={`site-nav__link${isActive('/insights') ? ' site-nav__link--active' : ''}`}>Insights</Link>
           <Link to="/team" className={`site-nav__link${isActive('/team') ? ' site-nav__link--active' : ''}`}>Team</Link>
