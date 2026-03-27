@@ -829,6 +829,13 @@ ul, ol { list-style: none; }
   font-size: var(--text-xs);
   color: rgba(255,255,255,0.35);
 }
+.site-footer__social {
+  display: inline-flex;
+  color: rgba(255,255,255,0.4);
+  margin-top: var(--space-3);
+  transition: color var(--transition-interactive);
+}
+.site-footer__social:hover { color: #0A66C2; }
 .site-footer__attribution {
   font-size: var(--text-xs);
   color: rgba(255,255,255,0.35);
