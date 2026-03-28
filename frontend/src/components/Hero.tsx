@@ -39,18 +39,13 @@ export default function Hero() {
     }
 
     // Use requestIdleCallback if available, otherwise setTimeout
-    let cancel: number
+    let cancel: ReturnType<typeof setTimeout> | number
     if ('requestIdleCallback' in window) {
       cancel = (window as any).requestIdleCallback(loadVideo, { timeout: 4000 })
+      return () => (window as any).cancelIdleCallback(cancel)
     } else {
-      cancel = window.setTimeout(loadVideo, mobile ? 3000 : 2000)
-    }
-    return () => {
-      if ('cancelIdleCallback' in window) {
-        (window as any).cancelIdleCallback(cancel)
-      } else {
-        clearTimeout(cancel)
-      }
+      cancel = setTimeout(loadVideo, mobile ? 3000 : 2000)
+      return () => clearTimeout(cancel)
     }
   }, [])
 

@@ -3,7 +3,8 @@ from pathlib import Path
 from fastapi import FastAPI, Request
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
-from fastapi.responses import FileResponse
+from fastapi.responses import FileResponse, Response
+from starlette.middleware.base import BaseHTTPMiddleware
 
 from app.config import settings
 from app.routes import chat, health, articles, contact
@@ -19,6 +20,58 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+
+# Cache-Control middleware — sets headers based on content type and path
+class CacheMiddleware(BaseHTTPMiddleware):
+    async def dispatch(self, request: Request, call_next):
+        response: Response = await call_next(request)
+        path = request.url.path
+
+        # Never cache API responses or HTML (SPA routing)
+        if path.startswith("/api/"):
+            response.headers["Cache-Control"] = "no-store"
+            return response
+
+        content_type = response.headers.get("content-type", "")
+
+        # Hashed assets (JS/CSS with fingerprint in filename) — cache aggressively
+        if path.startswith("/assets/") and any(
+            path.endswith(ext) for ext in (".js", ".css")
+        ):
+            response.headers["Cache-Control"] = "public, max-age=31536000, immutable"
+            return response
+
+        # Images, video, fonts — cache for 1 week
+        if any(
+            ext in content_type
+            for ext in ("image/", "video/", "font/", "application/font")
+        ) or any(
+            path.endswith(ext)
+            for ext in (".jpg", ".jpeg", ".png", ".svg", ".webp", ".mp4", ".webm", ".woff2", ".woff")
+        ):
+            response.headers["Cache-Control"] = "public, max-age=604800"
+            return response
+
+        # Favicon
+        if "favicon" in path:
+            response.headers["Cache-Control"] = "public, max-age=604800"
+            return response
+
+        # SEO files — cache for 1 hour
+        if path in ("/robots.txt", "/sitemap.xml", "/llms.txt", "/llms-full.txt", "/index.html.md"):
+            response.headers["Cache-Control"] = "public, max-age=3600"
+            return response
+
+        # HTML/SPA pages — revalidate every time
+        if "text/html" in content_type or path == "/":
+            response.headers["Cache-Control"] = "public, max-age=0, must-revalidate"
+            return response
+
+        return response
+
+
+app.add_middleware(CacheMiddleware)
 
 # API routes
 app.include_router(health.router)
