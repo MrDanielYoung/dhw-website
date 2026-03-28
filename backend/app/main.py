@@ -2,7 +2,6 @@ from pathlib import Path
 
 from fastapi import FastAPI, Request
 from fastapi.middleware.cors import CORSMiddleware
-from fastapi.staticfiles import StaticFiles
 from fastapi.responses import FileResponse, Response
 from starlette.middleware.base import BaseHTTPMiddleware
 from starlette.middleware.gzip import GZipMiddleware
@@ -23,13 +22,13 @@ app.add_middleware(
 )
 
 
-# Cache-Control middleware — sets headers based on content type and path
-class CacheMiddleware(BaseHTTPMiddleware):
+# Cache-Control + compression middleware
+class CacheAndCompressMiddleware(BaseHTTPMiddleware):
     async def dispatch(self, request: Request, call_next):
         response: Response = await call_next(request)
         path = request.url.path
 
-        # Never cache API responses or HTML (SPA routing)
+        # Never cache API responses
         if path.startswith("/api/"):
             response.headers["Cache-Control"] = "no-store"
             return response
@@ -72,8 +71,8 @@ class CacheMiddleware(BaseHTTPMiddleware):
         return response
 
 
-app.add_middleware(CacheMiddleware)
-app.add_middleware(GZipMiddleware, minimum_size=1000)  # gzip anything over 1KB
+app.add_middleware(CacheAndCompressMiddleware)
+app.add_middleware(GZipMiddleware, minimum_size=500)
 
 # API routes
 app.include_router(health.router)
@@ -89,24 +88,79 @@ frontend_dist = Path(__file__).parent.parent.parent / "frontend" / "dist"
 
 serve_dir = static_dir if static_dir.is_dir() else frontend_dist
 
-if serve_dir.is_dir():
-    # Mount static assets (JS, CSS, images) at /assets
-    assets_dir = serve_dir / "assets"
-    if assets_dir.is_dir():
-        app.mount("/assets", StaticFiles(directory=str(assets_dir)), name="assets")
+
+def _content_type(path: str) -> str:
+    """Guess content type from file extension."""
+    ext = Path(path).suffix.lower()
+    types = {
+        ".html": "text/html; charset=utf-8",
+        ".js": "text/javascript; charset=utf-8",
+        ".css": "text/css; charset=utf-8",
+        ".json": "application/json",
+        ".svg": "image/svg+xml",
+        ".png": "image/png",
+        ".jpg": "image/jpeg",
+        ".jpeg": "image/jpeg",
+        ".webp": "image/webp",
+        ".mp4": "video/mp4",
+        ".webm": "video/webm",
+        ".woff2": "font/woff2",
+        ".woff": "font/woff",
+        ".txt": "text/plain; charset=utf-8",
+        ".xml": "application/xml",
+        ".md": "text/markdown; charset=utf-8",
+    }
+    return types.get(ext, "application/octet-stream")
+
+
+def _serve_with_precompressed(file_path: Path, request: Request) -> FileResponse:
+    """Serve a pre-compressed (.br or .gz) version if the client supports it."""
+    accept_encoding = request.headers.get("accept-encoding", "")
     
-    # Serve other static files (favicon, etc.)
+    # Try brotli first (best compression)
+    if "br" in accept_encoding:
+        br_path = Path(str(file_path) + ".br")
+        if br_path.is_file():
+            return FileResponse(
+                br_path,
+                media_type=_content_type(str(file_path)),
+                headers={"Content-Encoding": "br", "Vary": "Accept-Encoding"},
+            )
+    
+    # Try gzip
+    if "gzip" in accept_encoding:
+        gz_path = Path(str(file_path) + ".gz")
+        if gz_path.is_file():
+            return FileResponse(
+                gz_path,
+                media_type=_content_type(str(file_path)),
+                headers={"Content-Encoding": "gzip", "Vary": "Accept-Encoding"},
+            )
+    
+    # Serve uncompressed (GZipMiddleware will handle compression)
+    return FileResponse(file_path, media_type=_content_type(str(file_path)))
+
+
+if serve_dir.is_dir():
+    # Serve /assets with pre-compressed file support
+    @app.get("/assets/{file_path:path}")
+    async def serve_assets(file_path: str, request: Request):
+        full_path = serve_dir / "assets" / file_path
+        if full_path.is_file():
+            return _serve_with_precompressed(full_path, request)
+        return Response(status_code=404)
+
     @app.get("/favicon.png")
-    async def favicon_png():
+    async def favicon_png(request: Request):
         return FileResponse(serve_dir / "favicon.png")
 
     @app.get("/favicon.svg")
-    async def favicon_svg():
-        return FileResponse(serve_dir / "favicon.svg")
+    async def favicon_svg(request: Request):
+        return FileResponse(serve_dir / "favicon.svg", media_type="image/svg+xml")
 
     @app.get("/articles-content.json")
-    async def articles_json():
-        return FileResponse(serve_dir / "articles-content.json")
+    async def articles_json(request: Request):
+        return _serve_with_precompressed(serve_dir / "articles-content.json", request)
 
     # SEO + AI/LLM discovery files
     @app.get("/robots.txt")
@@ -132,14 +186,13 @@ if serve_dir.is_dir():
     # SPA catch-all: serve index.html for any non-API route
     @app.get("/{full_path:path}")
     async def spa_fallback(request: Request, full_path: str):
-        # Don't catch API routes
         if full_path.startswith("api/"):
             return {"detail": "Not Found"}
         
         # Check if it's a real file in the static directory
         file_path = serve_dir / full_path
         if file_path.is_file():
-            return FileResponse(file_path)
+            return _serve_with_precompressed(file_path, request)
         
         # Otherwise serve index.html (SPA routing)
-        return FileResponse(serve_dir / "index.html")
+        return _serve_with_precompressed(serve_dir / "index.html", request)
