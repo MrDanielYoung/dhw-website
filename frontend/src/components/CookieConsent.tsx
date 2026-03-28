@@ -53,9 +53,9 @@ export default function CookieConsent() {
           </svg>
         </div>
         <div className="cookie-banner__content">
-          <p className="cookie-banner__heading">We baked our own cookie banner.</p>
+          <p className="cookie-banner__heading">Have a cookie.</p>
           <p className="cookie-banner__text">
-            We use analytics to improve our site. No tracking until you say so.{' '}
+            We use cookies and analytics to improve our site and deliver relevant content. Have one on us.{' '}
             <a href="/privacy" className="cookie-banner__link">Privacy Policy</a>
           </p>
         </div>
