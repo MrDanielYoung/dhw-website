@@ -75,6 +75,15 @@ jobs:
           tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_2AC6A1ECF76045749A3593A6812F335F }}
           subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_4CE7DEBCE1FD40C8858DBAE4B371A31A }}
 
+      - name: 'Set app settings'
+        uses: azure/appservice-settings@v1
+        with:
+          app-name: 'dhw-webapp'
+          app-settings-json: |
+            [
+              { "name": "PIPEDRIVE_API_TOKEN", "value": "${{ secrets.PIPEDRIVE_API_TOKEN }}", "slotSetting": false }
+            ]
+
       - name: 'Deploy to Azure Web App'
         uses: azure/webapps-deploy@v3
         id: deploy-to-webapp
