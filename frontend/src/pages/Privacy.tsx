@@ -41,7 +41,7 @@ export default function Privacy() {
 
             <h3>Information You Provide (Contact Form Data)</h3>
             <p>
-              If you choose to contact us via our online form (powered by Pipedrive), we will collect the personal information you provide, such as your name, email address, phone number, company/organization, and any details you include in your message. We use this information solely to respond to your inquiry or request. Providing this information is completely voluntary. We ask that you do not include sensitive personal information (e.g. health, financial, or account passwords) in the contact form.
+              If you choose to contact us via our online form (powered by Pipedrive), we will collect the personal information you provide, such as your name, email address, company/organization, and any details you include in your message. We use this information solely to respond to your inquiry or request. Providing this information is completely voluntary. We ask that you do not include sensitive personal information (e.g. health, financial, or account passwords) in the contact form.
             </p>
 
             <h3>Information Collected Automatically (Usage Data)</h3>
@@ -63,7 +63,7 @@ export default function Privacy() {
             <p>We load the following services:</p>
             <ul>
               <li><strong>Google Analytics (GA4):</strong> Collects anonymized usage data — pages visited, time on site, device type, approximate geographic region. Google Analytics may anonymize IP addresses (especially for EU users). Google acts as our data processor for analytics. See <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google's Privacy Policy</a>.</li>
-              <li><strong>Pipedrive LeadBooster:</strong> A contact form and chat widget. Data you voluntarily submit (name, email, phone, message) is stored in our Pipedrive CRM. See <a href="https://www.pipedrive.com/en/privacy" target="_blank" rel="noopener noreferrer">Pipedrive's Privacy Policy</a>.</li>
+              <li><strong>Pipedrive LeadBooster:</strong> A contact form and chat widget. Data you voluntarily submit (name, email, message) is stored in our Pipedrive CRM. See <a href="https://www.pipedrive.com/en/privacy" target="_blank" rel="noopener noreferrer">Pipedrive's Privacy Policy</a>.</li>
             </ul>
 
             <h3>If You Decline Cookies</h3>
@@ -195,8 +195,7 @@ export default function Privacy() {
             <p>
               <strong>Digital Health Works Inc. (U.S.):</strong><br />
               82 Wendell Avenue, Suite 100, Pittsfield, MA 01201<br />
-              Email: <a href="mailto:hello@digitalhealthworks.com">hello@digitalhealthworks.com</a><br />
-              Phone: +1 617 690 5440
+              Email: <a href="mailto:hello@digitalhealthworks.com">hello@digitalhealthworks.com</a>
             </p>
             <p>
               <strong>Digital Health Works Europe GmbH (fka Bold Works GmbH):</strong><br />

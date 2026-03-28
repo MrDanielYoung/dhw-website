@@ -26,7 +26,6 @@ export default function Imprint() {
             </p>
             <p>
               <strong>Contact (U.S.):</strong><br />
-              Phone: +1 617 690 5440<br />
               Email: <a href="mailto:hello@digitalhealthworks.com">hello@digitalhealthworks.com</a>
             </p>
             <p>
