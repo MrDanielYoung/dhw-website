@@ -38,8 +38,8 @@ export default function CaseStudy() {
                 <span style={{ fontSize: '0.85rem', opacity: 0.7 }}>Imaging centers &amp; hospitals</span>
               </div>
               <div style={{ borderLeft: '3px solid var(--color-teal)', paddingLeft: '1rem' }}>
-                <strong style={{ display: 'block', fontSize: '1.25rem' }}>HIPAA</strong>
-                <span style={{ fontSize: '0.85rem', opacity: 0.7 }}>Fully compliant infrastructure</span>
+                <strong style={{ display: 'block', fontSize: '1.25rem' }}>Secure</strong>
+                <span style={{ fontSize: '0.85rem', opacity: 0.7 }}>Enterprise-grade infrastructure</span>
               </div>
             </div>
             <a href="https://accessmri.io/" target="_blank" rel="noopener noreferrer" className="case-study__link">

@@ -88,7 +88,7 @@ DHW has deep expertise across these healthcare domains:
 - **Cardiology and electrophysiology** — CIED devices, cardiac implant management
 - **Healthcare IT** — FHIR interoperability, EHR/RIS integration, SMART on FHIR
 - **Healthcare economics** — CPT billing, reimbursement strategy, health technology assessment
-- **SaaS for healthcare** — Cloud deployment (Azure), HIPAA-compliant infrastructure, multi-tenant architecture
+- **SaaS for healthcare** — Cloud deployment (Azure), secure enterprise-grade infrastructure, multi-tenant architecture
 
 ## Case Study: AccessMRI
 
@@ -101,7 +101,7 @@ DHW's role encompassed the full commercialization pathway:
 - Distribution strategy (direct + VAR channel)
 - US market launch planning and execution
 - Contract framework development (MSA, PTS, DFA)
-- HIPAA compliance and data residency architecture
+- Secure infrastructure and data residency architecture
 
 AccessMRI is hosted on Microsoft Azure (North Central US region for US customers) and integrates via FHIR SMART on FHIR with hospital EHR/RIS systems.
 

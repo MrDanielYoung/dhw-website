@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom'
+import ThemeToggle from './ThemeToggle'
 
 const BOOKING_URL = 'https://outlook.office.com/book/DHWWebsiteMeeting@digitalhealthworks.com/'
 
@@ -52,11 +53,15 @@ export default function Header() {
           <Link to="/advisor" className={`site-nav__link${isActive('/advisor') ? ' site-nav__link--active' : ''}`}>Meet Helen</Link>
           <Link to="/contact" className={`site-nav__link${isActive('/contact') ? ' site-nav__link--active' : ''}`}>Contact</Link>
           <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer" className="site-nav__cta">Schedule a Call</a>
+          <div className="theme-toggle-mobile"><ThemeToggle /></div>
         </nav>
 
-        <button className="mobile-toggle" aria-label="Open menu" onClick={() => setMobileOpen(true)}>
-          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#ffffff" strokeWidth="2.5" strokeLinecap="round"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
-        </button>
+        <div className="header-actions">
+          <ThemeToggle />
+          <button className="mobile-toggle" aria-label="Open menu" onClick={() => setMobileOpen(true)}>
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+          </button>
+        </div>
       </div>
     </header>
   )

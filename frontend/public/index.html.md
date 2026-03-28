@@ -67,7 +67,7 @@ Digital Health Works led the full commercialization pathway: product strategy, m
 | Markets | US & EU dual-market launch strategy |
 | Platform | Cloud-based SaaS on Microsoft Azure |
 | Target | Radiology imaging centers & hospitals |
-| Compliance | HIPAA-compliant infrastructure |
+| Security | Enterprise-grade secure infrastructure |
 
 ---
 

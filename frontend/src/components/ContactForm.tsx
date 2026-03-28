@@ -17,13 +17,14 @@ export default function ContactForm() {
             </p>
           </div>
           <div className="contact-section__right fade-in">
-            <div style={{ background: '#ffffff', borderRadius: 'var(--radius-lg)', padding: 'var(--space-6)', minHeight: 400 }}>
+            <div style={{ background: '#ffffff', borderRadius: 'var(--radius-lg)', padding: 'var(--space-4)', overflow: 'hidden' }}>
               <iframe
                 src={FORM_URL}
                 width="100%"
-                height="500"
-                style={{ border: 'none', background: '#ffffff' }}
+                height="720"
+                style={{ border: 'none', background: '#ffffff', display: 'block' }}
                 title="Contact Form"
+                scrolling="no"
               />
             </div>
             <p style={{ textAlign: 'center', marginTop: 'var(--space-6)', fontSize: 'var(--text-sm)', color: 'var(--color-text-muted)' }}>

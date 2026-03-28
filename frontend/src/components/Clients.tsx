@@ -18,7 +18,7 @@ export default function Clients() {
     <section className="section clients" id="clients">
       <div className="container">
         <p className="section-label">Trusted By</p>
-        <h2 className="section-title" style={{ color: 'var(--color-navy)' }}>Customers and Clients</h2>
+        <h2 className="section-title">Customers and Clients</h2>
         <p className="section-desc">
           We work with medical device and digital health companies that are serious about commercialization in the US and European healthcare markets. Our clients range from early-stage medtech ventures to established healthcare technology companies.
         </p>

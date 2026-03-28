@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<script>try{var t=localStorage.getItem('dhw-theme');if(t==='light')document.documentElement.setAttribute('data-theme','light')}catch(e){}</script>
 <meta charset="UTF-8">
 <link rel="icon" type="image/png" href="/favicon.png">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -81,7 +82,7 @@
     "CIED MRI safety technology",
     "Hospital procurement and value analysis",
     "CPT billing and reimbursement strategy",
-    "HIPAA compliance",
+    "Healthcare data security",
     "Health technology assessment",
     "Medical device distribution strategy",
     "Clinical workflow integration",
@@ -238,19 +239,15 @@
 <!-- Preload critical assets -->
 <link rel="preload" href="/assets/images/hero-poster.jpg" as="image">
 <link rel="preload" href="/assets/images/dhw-header-logo-light.png" as="image">
+
+<!-- Usercentrics CMP — must be in head for proper initialization -->
+<script id="usercentrics-cmp" src="https://web.cmp.usercentrics.eu/ui/loader.js" data-settings-id="HC-8Gk-TMJIqdw" async></script>
+
 </head>
 <body>
-  <!-- Defer third-party scripts to after page load -->
+  <!-- Defer non-critical third-party scripts to after page load -->
   <script>
     window.addEventListener('load', function() {
-      // Usercentrics Consent Management
-      var uc = document.createElement('script');
-      uc.id = 'usercentrics-cmp';
-      uc.src = 'https://web.cmp.usercentrics.eu/ui/loader.js';
-      uc.setAttribute('data-settings-id', 'HC-8Gk-TMJIqdw');
-      uc.async = true;
-      document.head.appendChild(uc);
-
       // Google Analytics
       var ga = document.createElement('script');
       ga.src = 'https://www.googletagmanager.com/gtag/js?id=G-J0337MKZVY';
