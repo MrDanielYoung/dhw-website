@@ -9,9 +9,9 @@ MS_CLIENT_ID = "1950a258-227b-4e31-a9cf-717495945fc2"  # Azure PowerShell first-
 MS_USERNAME = os.getenv("MS_NOTIFY_USERNAME", "")
 MS_PASSWORD = os.getenv("MS_NOTIFY_PASSWORD", "")
 
-# DHW Inc team → General channel
+# DHW Inc team → DHW Marketing channel
 TEAM_ID = "55112248-9cbf-4822-b2e7-829264b464a0"
-CHANNEL_ID = "19:wgxiGb4zKXOgBRErUXvWiaCq_MFDROAUI3YfhccAap01@thread.tacv2"
+CHANNEL_ID = "19:7da209fec81c49c9805b934841278bf5@thread.tacv2"
 
 TOKEN_URL = f"https://login.microsoftonline.com/{MS_TENANT_ID}/oauth2/v2.0/token"
 GRAPH_URL = "https://graph.microsoft.com/v1.0"
