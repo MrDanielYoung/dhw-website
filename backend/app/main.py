@@ -5,6 +5,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
 from fastapi.responses import FileResponse, Response
 from starlette.middleware.base import BaseHTTPMiddleware
+from starlette.middleware.gzip import GZipMiddleware
 
 from app.config import settings
 from app.routes import chat, health, articles, contact
@@ -72,6 +73,7 @@ class CacheMiddleware(BaseHTTPMiddleware):
 
 
 app.add_middleware(CacheMiddleware)
+app.add_middleware(GZipMiddleware, minimum_size=1000)  # gzip anything over 1KB
 
 # API routes
 app.include_router(health.router)
