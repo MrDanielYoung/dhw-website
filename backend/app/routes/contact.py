@@ -4,6 +4,7 @@ import os
 import httpx
 from fastapi import APIRouter, HTTPException
 from pydantic import BaseModel, EmailStr
+from app.routes.notify import send_lead_notification
 
 router = APIRouter(prefix="/api", tags=["contact"])
 
@@ -94,6 +95,18 @@ async def submit_contact(data: ContactFormData):
                 await pipedrive_request("POST", "/notes", note_payload)
             except Exception:
                 pass  # Note creation is non-critical
+
+        # 5. Send Teams notification (best effort — don't fail the form)
+        try:
+            await send_lead_notification(
+                name=data.name,
+                email=data.email,
+                phone=data.phone,
+                company=data.company,
+                message=data.message,
+            )
+        except Exception:
+            pass  # Teams notification is non-critical
 
         return ContactResponse(
             success=True,

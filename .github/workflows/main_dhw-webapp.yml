@@ -81,7 +81,9 @@ jobs:
           app-name: 'dhw-webapp'
           app-settings-json: |
             [
-              { "name": "PIPEDRIVE_API_TOKEN", "value": "${{ secrets.PIPEDRIVE_API_TOKEN }}", "slotSetting": false }
+              { "name": "PIPEDRIVE_API_TOKEN", "value": "${{ secrets.PIPEDRIVE_API_TOKEN }}", "slotSetting": false },
+              { "name": "MS_NOTIFY_USERNAME", "value": "${{ secrets.MS_NOTIFY_USERNAME }}", "slotSetting": false },
+              { "name": "MS_NOTIFY_PASSWORD", "value": "${{ secrets.MS_NOTIFY_PASSWORD }}", "slotSetting": false }
             ]
 
       - name: 'Deploy to Azure Web App'
