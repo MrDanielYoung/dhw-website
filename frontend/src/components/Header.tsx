@@ -46,8 +46,7 @@ export default function Header() {
       <div className="site-header__inner">
         <Link to="/" className="site-header__logo" aria-label="Digital Health Works — Home">
           <img
-            src="/assets/images/dhw-header-logo-light.png"
-            srcSet="/assets/images/dhw-header-logo-light.png 1x, /assets/images/dhw-header-logo-light@2x.png 2x"
+            src="/assets/images/dhw-logo-light.svg"
             alt="Digital Health Works"
             height="32"
           />

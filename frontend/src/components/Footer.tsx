@@ -16,8 +16,7 @@ export default function Footer() {
         <div className="site-footer__brand">
           <Link to="/" className="site-header__logo" style={{ marginBottom: 'var(--space-2)' }} aria-label="Digital Health Works">
             <img
-              src="/assets/images/dhw-header-logo-light.png"
-              srcSet="/assets/images/dhw-header-logo-light.png 1x, /assets/images/dhw-header-logo-light@2x.png 2x"
+              src="/assets/images/dhw-logo-light.svg"
               alt="Digital Health Works"
               height="28"
               style={{ display: 'block' }}
