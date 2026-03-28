@@ -19,6 +19,23 @@ async def chat(request: Request):
     # Use client-provided system prompt for backward compat, otherwise server default
     system = body.get("system") or system_prompt
 
+    # Validate messages
+    if not messages or not isinstance(messages, list):
+        async def error_stream():
+            yield f"data: {json.dumps({'error': 'Please enter a message.'})}\n\n"
+        return StreamingResponse(error_stream(), media_type="text/event-stream")
+
+    # Ensure messages have correct format
+    messages = [
+        {"role": m.get("role", "user"), "content": m.get("content", "")}
+        for m in messages
+        if m.get("content", "").strip()
+    ]
+    if not messages:
+        async def error_stream():
+            yield f"data: {json.dumps({'error': 'Please enter a message.'})}\n\n"
+        return StreamingResponse(error_stream(), media_type="text/event-stream")
+
     async def generate():
         try:
             with client.messages.stream(

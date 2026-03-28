@@ -111,7 +111,17 @@ export default function ChatWidget() {
             if (data === '[DONE]') continue
             try {
               const parsed = JSON.parse(data)
-              if (parsed.text) {
+              if (parsed.error) {
+                // Server returned an error — show a friendly message
+                setMessages(prev => {
+                  const updated = [...prev]
+                  updated[updated.length - 1] = {
+                    role: 'assistant',
+                    content: 'I apologize, but something went wrong. Please try again or [schedule a call](https://outlook.office.com/book/DHWWebsiteMeeting@digitalhealthworks.com/) with our team directly.',
+                  }
+                  return updated
+                })
+              } else if (parsed.text) {
                 assistantContent += parsed.text
                 setMessages(prev => {
                   const updated = [...prev]
