@@ -27,9 +27,8 @@ export default function Hero() {
       ? '/assets/images/hero-video-sm.mp4'
       : '/assets/images/hero-video.mp4'
 
-    // Delay video load — poster handles the initial view
-    const delay = mobile ? 2500 : 1500
-    const timer = setTimeout(() => {
+    // Only load video after page is fully idle
+    const loadVideo = () => {
       if (videoRef.current) {
         videoRef.current.src = videoSrc
         videoRef.current.load()
@@ -37,8 +36,22 @@ export default function Hero() {
           setVideoLoaded(true)
         }).catch(() => {})
       }
-    }, delay)
-    return () => clearTimeout(timer)
+    }
+
+    // Use requestIdleCallback if available, otherwise setTimeout
+    let cancel: number
+    if ('requestIdleCallback' in window) {
+      cancel = (window as any).requestIdleCallback(loadVideo, { timeout: 4000 })
+    } else {
+      cancel = window.setTimeout(loadVideo, mobile ? 3000 : 2000)
+    }
+    return () => {
+      if ('cancelIdleCallback' in window) {
+        (window as any).cancelIdleCallback(cancel)
+      } else {
+        clearTimeout(cancel)
+      }
+    }
   }, [])
 
   return (
