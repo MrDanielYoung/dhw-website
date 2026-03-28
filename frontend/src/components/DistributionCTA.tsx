@@ -27,7 +27,7 @@ export default function DistributionCTA() {
               height={315}
             />
             <p className="distribution-cta__caption">
-              Cleveland Clinic concussion app — built by our founder, featured on Apple's homepage
+              We helped Cleveland Clinic commercialize their digital health innovations — including this concussion monitoring app, featured on Apple.com in 2014
             </p>
           </div>
         </div>
