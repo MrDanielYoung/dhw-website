@@ -7,10 +7,10 @@ export default function DistributionCTA() {
         <div className="distribution-cta__inner">
           <p className="section-label">For Product Companies</p>
           <h2 className="distribution-cta__title">
-            Getting ready to take your digital health, medtech, or software product to market?
+            We've built digital health operations inside Mittelstand and corporate companies — turning their innovations into revenue.
           </h2>
           <p className="distribution-cta__text">
-            We may be able to help. Digital Health Works builds distribution pipelines for medical device and digital health companies across the US, UK, and EU.
+            From standing up entire commercial teams to building the distribution pipelines that get products into hospitals and health systems across the US, UK, and EU — we may be able to do the same for you.
           </p>
           <Link to="/contact" className="cta-btn">
             Let's talk
