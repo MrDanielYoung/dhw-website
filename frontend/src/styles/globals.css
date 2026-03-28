@@ -1920,8 +1920,26 @@ ul, ol { list-style: none; }
 .distribution-cta {
   background: var(--color-bg);
 }
-.distribution-cta__inner {
-  max-width: 680px;
+.distribution-cta__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-12);
+  align-items: center;
+}
+@media (min-width: 768px) {
+  .distribution-cta__grid { grid-template-columns: 5fr 8fr; gap: var(--space-20); }
+}
+.distribution-cta__content {}
+.distribution-cta__image img {
+  width: 100%;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+}
+.distribution-cta__caption {
+  font-size: var(--text-xs);
+  color: var(--color-text-faint);
+  margin-top: var(--space-3);
+  font-style: italic;
 }
 .distribution-cta__title {
   font-family: var(--font-display);
