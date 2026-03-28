@@ -764,7 +764,7 @@ ul, ol { list-style: none; }
 /* ============================================
    CONTACT FORM SECTION
    ============================================ */
-.contact-section { background: var(--color-surface); }
+.contact-section { background: var(--color-surface); padding-top: clamp(var(--space-16), 10vw, var(--space-24)); }
 .contact-section__grid {
   display: grid;
   grid-template-columns: 1fr;
