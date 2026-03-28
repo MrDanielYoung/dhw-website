@@ -27,7 +27,7 @@ export default function DistributionCTA() {
               height={315}
             />
             <p className="distribution-cta__caption">
-              We helped Cleveland Clinic commercialize their digital health innovations — including this concussion monitoring app, featured on Apple.com in 2014
+              We helped Cleveland Clinic commercialize their digital health innovations — including the first generation of DTx from CCF in 2010, and this concussion monitoring app, featured on Apple.com in 2014
             </p>
           </div>
         </div>
