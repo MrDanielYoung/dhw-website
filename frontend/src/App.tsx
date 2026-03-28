@@ -3,6 +3,7 @@ import Home from './pages/Home'
 import About from './pages/About'
 import Team from './pages/Team'
 import Insights from './pages/Insights'
+import ArticlePage from './pages/ArticlePage'
 import Contact from './pages/Contact'
 import Advisor from './pages/Advisor'
 import Header from './components/Header'
@@ -19,6 +20,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/team" element={<Team />} />
         <Route path="/insights" element={<Insights />} />
+        <Route path="/insights/:slug" element={<ArticlePage />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/advisor" element={<Advisor />} />
       </Routes>

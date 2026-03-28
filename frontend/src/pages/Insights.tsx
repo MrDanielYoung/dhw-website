@@ -1,4 +1,5 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
+import { Link } from 'react-router-dom'
 
 const BOOKING_URL = 'https://outlook.office.com/book/DHWWebsiteMeeting@digitalhealthworks.com/'
 
@@ -13,7 +14,8 @@ interface Article {
   excerpt: string
 }
 
-const articles: Article[] = [
+// Hardcoded fallback in case API isn't ready yet
+const FALLBACK_ARTICLES: Article[] = [
   {
     slug: 'medical-commercialization-9-moves',
     title: 'Medical Device Commercialization: 9 "Working Backwards" Moves to Reach your First Revenues',
@@ -110,6 +112,20 @@ function formatDate(dateStr: string): string {
 
 export default function Insights() {
   const [filter, setFilter] = useState('all')
+  const [articles, setArticles] = useState<Article[]>(FALLBACK_ARTICLES)
+
+  useEffect(() => {
+    fetch('/api/articles')
+      .then(res => res.ok ? res.json() : null)
+      .then(data => {
+        if (data && Array.isArray(data) && data.length > 0) {
+          setArticles(data)
+        }
+      })
+      .catch(() => {
+        // Use fallback articles
+      })
+  }, [])
 
   const filtered = filter === 'all' ? articles : articles.filter(a => a.pillar === filter)
 
@@ -143,12 +159,11 @@ export default function Insights() {
           {/* Articles Grid */}
           <div className="articles-grid">
             {filtered.map((article, i) => (
-              <a
+              <Link
                 key={article.slug}
-                href="#"
+                to={`/insights/${article.slug}`}
                 className={`article-card${i === 0 && filter === 'all' ? ' article-card--featured' : ''}`}
                 data-pillar={article.pillar}
-                onClick={(e) => e.preventDefault()}
               >
                 <div className="article-card__body">
                   <p className="article-card__pillar">{article.pillar_label}</p>
@@ -159,7 +174,7 @@ export default function Insights() {
                     <span className="article-card__date">{formatDate(article.date)}</span>
                   </div>
                 </div>
-              </a>
+              </Link>
             ))}
           </div>
         </div>

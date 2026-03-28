@@ -6,7 +6,7 @@ from fastapi.staticfiles import StaticFiles
 from fastapi.responses import FileResponse
 
 from app.config import settings
-from app.routes import chat, health
+from app.routes import chat, health, articles
 
 app = FastAPI(title="Digital Health Works API")
 
@@ -23,6 +23,7 @@ app.add_middleware(
 # API routes
 app.include_router(health.router)
 app.include_router(chat.router)
+app.include_router(articles.router)
 
 # In production, serve the React frontend build
 # CI/CD copies frontend build to backend/static/
