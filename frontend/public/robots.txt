@@ -1,46 +1,4 @@
-# Digital Health Works — robots.txt
-# Last Updated: 2026-03-27
-
 User-agent: *
 Allow: /
-Allow: /llms.txt
-Allow: /llms-full.txt
-Allow: /sitemap.xml
 
-# Sitemap
 Sitemap: https://digitalhealthworks.com/sitemap.xml
-
-# AI/LLM Context Files
-# llms.txt: https://digitalhealthworks.com/llms.txt
-# llms-full.txt: https://digitalhealthworks.com/llms-full.txt
-
-# Allow all major AI crawlers
-User-agent: GPTBot
-Allow: /
-
-User-agent: ChatGPT-User
-Allow: /
-
-User-agent: Claude-Web
-Allow: /
-
-User-agent: ClaudeBot
-Allow: /
-
-User-agent: PerplexityBot
-Allow: /
-
-User-agent: Bytespider
-Allow: /
-
-User-agent: CCBot
-Allow: /
-
-User-agent: anthropic-ai
-Allow: /
-
-User-agent: Google-Extended
-Allow: /
-
-User-agent: cohere-ai
-Allow: /
