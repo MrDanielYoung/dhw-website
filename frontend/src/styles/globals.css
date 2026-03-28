@@ -267,8 +267,8 @@ ul, ol { list-style: none; }
 
 /* Desktop: show toggle in header-actions, hide in mobile nav */
 .theme-toggle-mobile { display: none; }
-@media (max-width: 768px) {
-  /* Mobile: show toggle inside nav overlay, hide from header-actions */
+@media (max-width: 1024px) {
+  /* Mobile/tablet: show toggle inside nav overlay, hide from header-actions */
   .header-actions > .theme-toggle { display: none; }
   .theme-toggle-mobile { display: block; margin-top: var(--space-4); }
 }
@@ -290,7 +290,7 @@ ul, ol { list-style: none; }
 .mobile-close {
   display: none;
 }
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .site-header__logo img {
     max-width: 200px;
     height: auto;
