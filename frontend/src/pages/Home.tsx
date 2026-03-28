@@ -5,6 +5,7 @@ import Services from '../components/Services'
 import CTASection from '../components/CTASection'
 import Clients from '../components/Clients'
 import CaseStudy from '../components/CaseStudy'
+import DistributionCTA from '../components/DistributionCTA'
 import ContactForm from '../components/ContactForm'
 
 export default function Home() {
@@ -17,6 +18,7 @@ export default function Home() {
       <CTASection />
       <Clients />
       <CaseStudy />
+      <DistributionCTA />
       <ContactForm />
     </main>
   )

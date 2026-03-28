@@ -1913,3 +1913,28 @@ ul, ol { list-style: none; }
   transition: color var(--transition-interactive);
 }
 .native-form__reset:hover { color: var(--color-accent-hover); }
+
+/* ============================================
+   DISTRIBUTION CTA
+   ============================================ */
+.distribution-cta {
+  background: var(--color-bg);
+}
+.distribution-cta__inner {
+  max-width: 680px;
+}
+.distribution-cta__title {
+  font-family: var(--font-display);
+  font-size: var(--text-xl);
+  font-weight: 700;
+  color: var(--color-text);
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  margin-bottom: var(--space-4);
+}
+.distribution-cta__text {
+  font-size: var(--text-base);
+  color: var(--color-text-muted);
+  line-height: 1.65;
+  margin-bottom: var(--space-8);
+}
