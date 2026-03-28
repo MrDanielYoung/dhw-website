@@ -240,14 +240,14 @@
 <link rel="preload" href="/assets/images/hero-poster.jpg" as="image">
 <link rel="preload" href="/assets/images/dhw-header-logo-light.png" as="image">
 
-<!-- Usercentrics CMP — must be in head for proper initialization -->
-<script id="usercentrics-cmp" src="https://web.cmp.usercentrics.eu/ui/loader.js" data-settings-id="HC-8Gk-TMJIqdw" async></script>
-
 </head>
 <body>
-  <!-- Defer non-critical third-party scripts to after page load -->
+  <!-- Third-party scripts: only load after cookie consent -->
   <script>
-    window.addEventListener('load', function() {
+    window.__dhwLoadTracking = function() {
+      if (window.__dhwTrackingLoaded) return;
+      window.__dhwTrackingLoaded = true;
+
       // Google Analytics
       var ga = document.createElement('script');
       ga.src = 'https://www.googletagmanager.com/gtag/js?id=G-J0337MKZVY';
@@ -260,7 +260,7 @@
       };
       document.head.appendChild(ga);
 
-      // Pipedrive LeadBooster (delay extra 2s — lowest priority)
+      // Pipedrive LeadBooster
       setTimeout(function() {
         window.pipedriveLeadboosterConfig = {base: 'leadbooster-chat.pipedrive.com',companyId: 916498,playbookUuid: 'lAxoEaKr6Gb4OYGd',version: 2};
         window.LeadBooster = {q:[],on:function(n,h){this.q.push({t:'o',n:n,h:h})},trigger:function(n){this.q.push({t:'t',n:n})}};
@@ -268,8 +268,15 @@
         pd.src = 'https://leadbooster-chat.pipedrive.com/assets/loader.js';
         pd.async = true;
         document.head.appendChild(pd);
-      }, 2000);
-    });
+      }, 500);
+    };
+
+    // If user already consented (from a previous visit), load immediately after page load
+    try {
+      if (localStorage.getItem('dhw-cookies') === 'accepted') {
+        window.addEventListener('load', window.__dhwLoadTracking);
+      }
+    } catch(e) {}
   </script>
   <!-- SSR-friendly noscript content for crawlers that don't execute JS -->
   <noscript>

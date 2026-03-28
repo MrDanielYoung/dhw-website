@@ -23,7 +23,7 @@ Romy Benninga encountered parallel challenges in Boston's medtech ecosystem, wat
 
 ### Legal Entities
 - **DHW Inc.** — US operations (Boston, Massachusetts: 6 Liberty Square, Boston, MA 02109; +1 617 690 5440)
-- **DHW GmbH / Bold Works GmbH** — European operations (Berlin: Torstraße 99, 10119 Berlin; +49 30 863 209 240)
+- **Digital Health Works Europe GmbH (fka Bold Works GmbH)** — European operations (Berlin: Torstraße 99, 10119 Berlin; +49 30 863 209 240)
 
 ### Strategic Partners
 - **Avalon Health Economics** — Partnership for Health Economics and Outcomes Research (HEOR). Provides economic impact validation studies, budget impact models, and cost-effectiveness analyses integrated into GTM roadmaps.
