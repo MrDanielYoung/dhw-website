@@ -487,7 +487,10 @@ ul, ol { list-style: none; }
   will-change: opacity;
   object-fit: cover;
   opacity: 0;
-  transition: opacity 1s ease;
+  transition: opacity 1.2s ease;
+}
+.hero__video.is-loaded {
+  opacity: 0.65;
 }
 .hero__overlay {
   position: absolute;
