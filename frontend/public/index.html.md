@@ -34,11 +34,13 @@ For medtech companies, digital health startups, and device manufacturers enterin
 
 ## Our Approach
 
-We start from the sale and work backward.
+We are experts in the value dynamics of digital health and medical technologies. We develop markets; We make sales happen.
 
-Most medical technologies fail at commercialization, not at the bench. The gap between a working product and a paying customer is where ventures lose momentum — navigating hospital procurement, building reimbursement pathways, and finding the right commercial model for a risk-averse market.
+Countless research teams and startups develop groundbreaking medical products, only to falter at market entry. It is an all-too-common fate in medical technology. A medical device product's value is realized only when it reaches patients. Without adoption, impact is lost.
 
-Digital Health Works starts where it matters most: who will buy your product, how they will pay for it, and what it takes to close the deal. We call this Value Dynamics — a methodology that maps the revenue pathway before you go to market, then builds the commercial infrastructure to execute on it.
+Most medical technologies are built forward: designed, validated, approved, then handed to sales with the assumption that revenue will magically follow. It rarely does. Healthcare adopts innovation when value is clear, risk is defined, incentives are aligned, and operational impact is understood. Without a clear market access strategy, even strong products stall.
+
+We take a different approach. We start from the sale and work backward — defining the buyer, the commercialization pathway, and the commercial structure first. Digital Health Works is a medical device commercialization and sales agency. We help medtech, digital health, and life science companies build markets through health economics strategy, medical device go-to-market planning, and distributor sales — primarily in the US and Europe.
 
 ---
 
