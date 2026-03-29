@@ -13,7 +13,11 @@ client = anthropic.Anthropic(api_key=settings.anthropic_api_key)
 
 # Load Kate's system prompt
 _kate_prompt_path = Path(__file__).resolve().parent.parent / "kate-system-prompt.txt"
-kate_system_prompt = _kate_prompt_path.read_text(encoding="utf-8")
+try:
+    kate_system_prompt = _kate_prompt_path.read_text(encoding="utf-8")
+except FileNotFoundError:
+    # Fallback if file not found in container
+    kate_system_prompt = "You are Kate, the LinkedIn content assistant at Digital Health Works. Help the user draft LinkedIn posts."
 
 
 @router.post("/api/kate/chat")
