@@ -8,10 +8,10 @@ export default function DistributionCTA() {
           <div className="distribution-cta__content">
             <p className="section-label">For Product Companies</p>
             <h2 className="distribution-cta__title">
-              We've built digital health operations inside Mittelstand and corporate companies — turning their innovations into revenue.
+              We've built digital health operations, turning customer innovations into revenue-generating businesses.
             </h2>
             <p className="distribution-cta__text">
-              From standing up entire commercial teams to building the distribution pipelines that get products into hospitals and health systems across the US, UK, and EU — we may be able to do the same for you.
+              From standing up entire commercial teams to building the distribution pipelines that get products into hospitals and health systems across the US, UK, and EU, we may be able to do the same for you.
             </p>
             <Link to="/contact" className="cta-btn">
               Let's talk
@@ -21,13 +21,12 @@ export default function DistributionCTA() {
           <div className="distribution-cta__image fade-in">
             <img
               src="/assets/images/apple-concussion.jpg"
-              alt="Cleveland Clinic concussion app built by Daniel Young — featured on Apple.com homepage"
+              alt="Cleveland Clinic concussion app developed by Daniel Young, featured on Apple.com"
               loading="lazy"
-              width={960}
-              height={315}
+              style={{ width: '100%', height: 'auto' }}
             />
             <p className="distribution-cta__caption">
-              We helped Cleveland Clinic commercialize their digital health innovations — including the first generation of DTx from CCF in 2010, and this concussion monitoring app, featured on Apple.com in 2014
+              We helped the Cleveland Clinic develop and commercialize digital health apps, including their concussion monitoring app featured by Apple in 2014
             </p>
           </div>
         </div>
