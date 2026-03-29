@@ -749,10 +749,8 @@ ul, ol { list-style: none; }
   .case-study__grid { grid-template-columns: 5fr 8fr; gap: var(--space-20); }
 }
 .case-study__image {
-  object-fit: cover;
-  object-position: top left;
-  aspect-ratio: 4 / 3;
   width: 100%;
+  height: auto;
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-lg);
 }
@@ -787,6 +785,7 @@ ul, ol { list-style: none; }
   text-decoration: none;
   font-weight: 600;
   font-size: var(--text-sm);
+  margin-top: var(--space-6);
 }
 .case-study__link:hover { color: var(--color-accent-hover); }
 .case-study__link svg { transition: transform var(--transition-interactive); }
