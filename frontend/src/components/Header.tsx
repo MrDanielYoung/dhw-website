@@ -51,7 +51,7 @@ export default function Header() {
           <Link to="/about" className={`site-nav__link${isActive('/about') ? ' site-nav__link--active' : ''}`}>About</Link>
           <Link to="/insights" className={`site-nav__link${isActive('/insights') ? ' site-nav__link--active' : ''}`}>Insights</Link>
           <Link to="/team" className={`site-nav__link${isActive('/team') ? ' site-nav__link--active' : ''}`}>Team</Link>
-          <Link to="/advisor" className={`site-nav__link${isActive('/advisor') ? ' site-nav__link--active' : ''}`}>Meet Helen</Link>
+          <Link to="/meet-helen" className={`site-nav__link${isActive('/meet-helen') ? ' site-nav__link--active' : ''}`}>Meet Helen</Link>
           <Link to="/contact" className={`site-nav__link${isActive('/contact') ? ' site-nav__link--active' : ''}`}>Contact</Link>
           <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer" className="site-nav__cta">Schedule a Call</a>
         </nav>
@@ -85,7 +85,7 @@ export default function Header() {
           <Link to="/about" className={`mobile-panel__link${isActive('/about') ? ' mobile-panel__link--active' : ''}`} onClick={closeMobile}>About</Link>
           <Link to="/insights" className={`mobile-panel__link${isActive('/insights') ? ' mobile-panel__link--active' : ''}`} onClick={closeMobile}>Insights</Link>
           <Link to="/team" className={`mobile-panel__link${isActive('/team') ? ' mobile-panel__link--active' : ''}`} onClick={closeMobile}>Team</Link>
-          <Link to="/advisor" className={`mobile-panel__link${isActive('/advisor') ? ' mobile-panel__link--active' : ''}`} onClick={closeMobile}>Meet Helen</Link>
+          <Link to="/meet-helen" className={`mobile-panel__link${isActive('/meet-helen') ? ' mobile-panel__link--active' : ''}`} onClick={closeMobile}>Meet Helen</Link>
           <Link to="/contact" className={`mobile-panel__link${isActive('/contact') ? ' mobile-panel__link--active' : ''}`} onClick={closeMobile}>Contact</Link>
         </nav>
 

@@ -1,4 +1,4 @@
-import { Routes, Route } from 'react-router-dom'
+import { Routes, Route, Navigate } from 'react-router-dom'
 import { lazy, Suspense } from 'react'
 import Home from './pages/Home'
 import Header from './components/Header'
@@ -12,7 +12,7 @@ const Team = lazy(() => import('./pages/Team'))
 const Insights = lazy(() => import('./pages/Insights'))
 const ArticlePage = lazy(() => import('./pages/ArticlePage'))
 const Contact = lazy(() => import('./pages/Contact'))
-const Advisor = lazy(() => import('./pages/Advisor'))
+const MeetHelen = lazy(() => import('./pages/MeetHelen'))
 const Privacy = lazy(() => import('./pages/Privacy'))
 const Imprint = lazy(() => import('./pages/Imprint'))
 
@@ -29,7 +29,8 @@ function App() {
           <Route path="/insights" element={<Insights />} />
           <Route path="/insights/:slug" element={<ArticlePage />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/advisor" element={<Advisor />} />
+          <Route path="/meet-helen" element={<MeetHelen />} />
+          <Route path="/advisor" element={<Navigate to="/meet-helen" replace />} />
           <Route path="/privacy" element={<Privacy />} />
           <Route path="/imprint" element={<Imprint />} />
         </Routes>

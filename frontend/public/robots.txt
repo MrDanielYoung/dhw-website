@@ -2,3 +2,7 @@ User-agent: *
 Allow: /
 
 Sitemap: https://digitalhealthworks.com/sitemap.xml
+
+# LLM-readable site description
+# See https://llmstxt.org/
+LLMs-txt: https://digitalhealthworks.com/llms.txt

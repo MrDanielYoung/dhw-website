@@ -37,7 +37,7 @@ export default function Footer() {
         <div>
           <p className="site-footer__col-title">Resources</p>
           <Link to="/insights" className="site-footer__link">Insights</Link>
-          <Link to="/advisor" className="site-footer__link">Meet Helen</Link>
+          <Link to="/meet-helen" className="site-footer__link">Meet Helen</Link>
           <a href="https://accessmri.io/" target="_blank" rel="noopener noreferrer" className="site-footer__link">AccessMRI</a>
           <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer" className="site-footer__link">Schedule Meeting</a>
         </div>

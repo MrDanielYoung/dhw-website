@@ -1,6 +1,6 @@
 # Digital Health Works
 
-> Digital Health Works is a medical device commercialization and sales agency based in Berlin, Germany. We help medtech, digital health, and life science companies build sustainable revenue across the US and European markets through health economics strategy (Value Dynamics), commercial market development, and distributor sales as a manufacturer's sales representative.
+> Digital Health Works is a medical device commercialization and sales agency helping medtech, digital health, and life science companies build sustainable revenue across the US and European markets through health economics strategy (Value Dynamics), commercial market development, and distributor sales as a manufacturer's sales representative.
 
 Digital Health Works was co-founded by Daniel Young and Romy Benninga. The company operates as a Manufacturer's Sales Rep Agency paired with Value Dynamics consulting and Market Development services — providing a complete commercialization solution that integrates both strategy and execution.
 
@@ -8,11 +8,14 @@ Our methodology, Value Dynamics, works backwards from the point of sale: analyzi
 
 We serve medical device manufacturers, digital health companies, health technology startups, and life science ventures — from early-stage teams developing prototypes to established manufacturers seeking new market entry. Our domain expertise covers clinical imaging, cardiology, radiology, CIED MRI safety, remote patient monitoring, AI-based diagnostics, and clinical decision support.
 
+Digital Health Works Inc. is headquartered in Boston, MA (6 Liberty Square, Boston MA 02109) and operates in Europe through Bold Works GmbH (Torstraße 99, 10119 Berlin).
+
 ## Core Pages
 
 - [Home](https://digitalhealthworks.com/): Company overview, services, and value proposition
 - [About](https://digitalhealthworks.com/about): Company history, founders, and mission
 - [Team](https://digitalhealthworks.com/team): Team profiles — Daniel Young and Romy Benninga
+- [Meet Helen](https://digitalhealthworks.com/meet-helen): AI-powered commercialization advisor — ask questions about medical device market entry, reimbursement, regulatory pathways, go-to-market strategy, and more. Helen can help you scope your commercialization challenge, identify key next steps, export talking points, and book a call with the DHW team.
 - [Contact](https://digitalhealthworks.com/contact): Contact form and scheduling
 - [Insights](https://digitalhealthworks.com/insights): Thought leadership articles on medical device commercialization
 
@@ -21,6 +24,25 @@ We serve medical device manufacturers, digital health companies, health technolo
 - [Value Dynamics](https://digitalhealthworks.com/services#value-dynamics): Health economics and value strategy — reimbursement pathway mapping, budget impact modeling, stakeholder incentive analysis, value framework development
 - [Market Development](https://digitalhealthworks.com/services#market-development): Commercial strategy and market entry — pricing models, distribution channels, partner identification, VAC preparation, go-to-market roadmap
 - [Distributor Sales](https://digitalhealthworks.com/services#distributor-sales): Manufacturer's sales representation — pipeline development, hospital account management, procurement navigation, contract closing, customer relationship management
+
+## Helen — AI Commercialization Advisor
+
+Helen is an AI-powered advisor embedded in the Digital Health Works website at [digitalhealthworks.com/meet-helen](https://digitalhealthworks.com/meet-helen). She helps medtech founders, product managers, and commercial leaders navigate the complexities of bringing medical devices and digital health products to market.
+
+Helen can discuss:
+- FDA 510(k), De Novo, and PMA regulatory pathways
+- EU MDR / CE marking and IVDR compliance
+- UK MHRA / UKCA requirements
+- German DiGA (digital therapeutics) fast-track pathway
+- US reimbursement: CPT, HCPCS, DRG, APC coding strategies
+- EU/UK reimbursement: EBM, GOÄ, NICE HTA, NHS procurement
+- Go-to-market strategy and commercial planning
+- Hospital procurement and Value Analysis Committee preparation
+- Pilot program design and conversion to commercial contracts
+- Sales infrastructure: direct sales, distributors, KAM strategy
+- Clinical evidence strategy and health economics modeling
+
+Helen provides public-domain guidance and helps users identify what they need to address. For tailored consulting engagement, users can book a call with the DHW team directly from the chat interface.
 
 ## Key Articles
 
@@ -31,4 +53,5 @@ We serve medical device manufacturers, digital health companies, health technolo
 ## Optional
 
 - [Schedule a Call](https://outlook.office.com/book/DHWWebsiteMeeting@digitalhealthworks.com/): Book a discovery meeting with Digital Health Works
+- [Meet Helen](https://digitalhealthworks.com/meet-helen): Talk to Helen, our AI commercialization advisor
 - [LinkedIn](https://www.linkedin.com/company/digital-health-works/): Company LinkedIn profile
