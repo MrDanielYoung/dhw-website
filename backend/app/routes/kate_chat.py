@@ -20,6 +20,12 @@ kate_system_prompt = _kate_prompt_path.read_text(encoding="utf-8")
 async def kate_chat(request: Request):
     body = await request.json()
     messages = body.get("messages", [])
+    user_context = body.get("user_context", None)
+
+    # Build system prompt with user context
+    system = kate_system_prompt
+    if user_context:
+        system = kate_system_prompt + "\n\n## Current Session\n" + user_context
 
     # Validate messages
     if not messages or not isinstance(messages, list):
@@ -43,7 +49,7 @@ async def kate_chat(request: Request):
             with client.messages.stream(
                 model="claude-sonnet-4-20250514",
                 max_tokens=2048,
-                system=kate_system_prompt,
+                system=system,
                 messages=messages,
             ) as stream:
                 for text in stream.text_stream:
