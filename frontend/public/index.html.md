@@ -1,6 +1,6 @@
 # Digital Health Works — Medical Device Commercialization, Market Access & Sales Agency
 
-> We connect medical innovations to the people who need them most.
+> We connect medical innovators to the people who need them the most.
 
 [Schedule a Call](https://outlook.office.com/book/DHWWebsiteMeeting@digitalhealthworks.com/)
 
