@@ -1,24 +1,17 @@
 export default function Approach() {
   return (
-    <section className="section approach" id="approach">
+    <section className="section approach" id="approach" aria-labelledby="approach-heading">
       <div className="container">
         <div className="approach__grid">
           <div className="approach__left fade-in">
-            <h2 className="approach__statement">
-              We are experts in the <em>value dynamics</em> of digital health and medical technologies.
-            </h2>
-            <h2 className="approach__statement" style={{ marginTop: 'var(--space-6)' }}>
-              We develop markets; We make <em>sales happen</em>.
+            <p className="section-label">Our Approach</p>
+            <h2 id="approach-heading" className="approach__statement">
+              We start from the sale and work backward.
             </h2>
           </div>
           <div className="approach__body fade-in">
-            <p>Countless research teams and startups develop groundbreaking medical products, only to falter at market entry. It is an all-too-common fate in medical technology.</p>
-            <p>A product's value is realized only when it reaches patients. Without adoption, impact is lost.</p>
-            <p>Most medical technologies are built forward: designed, validated, approved, then handed to sales with the assumption that revenue will magically follow.</p>
-            <p><strong>It rarely does.</strong></p>
-            <p>Healthcare adopts innovation when value is clear, risk is defined, incentives are aligned, and operational impact is understood. If these conditions are not built in early, even strong products stall.</p>
-            <p>We take a different approach. <strong>We start from the sale and work backward</strong>, defining the buyer, the value dynamics and the commercial structure first.</p>
-            <p>Digital Health Works is a medical device commercialization and sales firm. We help medtech and digital health companies build markets through healthcare market access strategy, medical device go-to-market planning, and direct sales execution, primarily in the US and Europe.</p>
+            <p>Most medical technologies fail at commercialization, not at the bench. The gap between a working product and a paying customer is where ventures lose momentum — navigating hospital procurement, building reimbursement pathways, and finding the right commercial model for a risk-averse market.</p>
+            <p>Digital Health Works starts where it matters most: <strong>who will buy your product, how they will pay for it, and what it takes to close the deal.</strong> We call this Value Dynamics — a methodology that maps the revenue pathway before you go to market, then builds the commercial infrastructure to execute on it.</p>
           </div>
         </div>
       </div>
